@@ -1,7 +1,6 @@
-# device-history-record-capstone-client
+# Device History Record Capstone
 
-# Capstone Project Title
-One line descritpion of what this app is doing and who is it for
+A app to track medical device history records
 
 ## Working Prototype
 You can access a working prototype of the React app here: https://your-app-client.herokuapp.com/ and Node app here: https://your-app-server.herokuapp.com/
@@ -20,13 +19,13 @@ This app is for two types of users: a visitor and a logged-in user
 ### Wireframes
 Landing/Login Page
 :-------------------------:
-![Landing/Login Page](/github-images/wireframes/landing-page-wireframes.png)
+![Landing/Login Page](/git-images/wireframes/landing-page-wireframes.png)
 
 
 ## Screenshots
 Landing/Login Page
 :-------------------------:
-![Landing Page](/github-images/screenshots/login-page-screenshot.png)
+![Landing Page](/git-images/screenshots/login-page-screenshot.png)
 
 
 ## Functionality
@@ -34,10 +33,28 @@ The app's functionality includes:
 * Every User has the ability to create an account
 
 ## Business Objects (back-end structure)
-* User (database table)
-    * Username (email validation)
-    * Password (at least 8 chars, at least one alpha and a special character validation)
-
+* users (database table)
+   * email (jthronson@domain.com)
+   * password (min 8 chars; one symbol and a capital letter)
+   * first name (Johny)
+   * last name (Thronson)
+* devices (database table)
+   * device_id
+   * Device Name: 3.0T Balun Assembly
+   * Device Number: NC143200
+   * DMR #: NC143000
+   * Device S/N: 143-4-1001
+   * Lot No : 1234
+   * Network Analyzer: 123
+   * Power Supply: 123
+   * S21 Probe: 123
+   * Calibration Standard: 123
+* tests (database table)
+   * test_id
+   * device_id
+   * decibels_value (127.72MHz)
+   * attenuation_value (-21)
+   * limit_value
 
 ## Technology
 * Front-End: HTML5, CSS3, JavaScript ES6, React
