@@ -34,27 +34,39 @@ The app's functionality includes:
 
 ## Business Objects (back-end structure)
 * users (database table)
-   * email (jthronson@domain.com)
+   * email (jsmith@domain.com)
    * password (min 8 chars; one symbol and a capital letter)
-   * first name (Johny)
-   * last name (Thronson)
+   * first_name (Jimmy)
+   * last_name (Smith)
 * devices (database table)
-   * device_id
-   * Device Name: 3.0T Balun Assembly
-   * Device Number: NC143200
-   * DMR #: NC143000
-   * Device S/N: 143-4-1001
-   * Lot No : 1234
-   * Network Analyzer: 123
-   * Power Supply: 123
-   * S21 Probe: 123
-   * Calibration Standard: 123
+   * device_id (123456789)
+   * device_name (3.0T RF Trap)
+   * assembly_no (ABC1234)
+   * dmr_no (ABC1234DMR)
+   * device_sn (123456789)
+   * wo_no (1234)
+   * mfg_date (DDMMYYYY)
+   * network_analyzer (1234)
+   * power_supply (1234)
+   * s21_probe (1234)
+   * calibration_standard (1234)
 * tests (database table)
-   * test_id
-   * device_id
-   * decibels_value (127.72MHz)
-   * attenuation_value (-21)
-   * limit_value
+   * device_id (123456789)
+   * db_value_user_entry (-15)
+   * db_limit (-10)
+   * freq_value (127.72MHz)
+   * cap_value (2.4pF)
+   * ncm_no (YY-123)
+   * approve (true)
+   * reject (false)
+* defect_log (database table)
+   * ncm_no (YY-123)
+   * device_sn (123456789)
+   * first_name (Jimmy)
+   * last_name (Smith)
+   * Yes (true)
+   * No  (false)
+   * user_entry (text)
 
 ## Technology
 * Front-End: HTML5, CSS3, JavaScript ES6, React
