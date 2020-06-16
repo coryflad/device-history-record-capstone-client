@@ -27,13 +27,21 @@ Provide user a page to record test data
 
 #### User Page #3
 Provide user a page to record inspection record keeping
+:-------------------------:
 
 ![Landing Page Design](/github-images/screenshots/user-page-3.png)
 
 #### Defect Log
 Provide user a page to record rework and its acceptance activities
+:-------------------------:
 
 ![Landing Page Design](/github-images/screenshots/defect-log.png)
+
+#### User Page #4
+Provide user a page to provide the final approved test results
+:-------------------------:
+
+![Landing Page Design](/github-images/screenshots/user-page-4.png)
 
 
 
