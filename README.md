@@ -12,7 +12,7 @@ You can access a working prototype of the React app here: https://your-app-clien
 
 *Provide user a login page
 
-![Landing Page Design](/github-images/landing-page.png)
+![Landing Page Design](/github-images/screenshots/landing-page.png)
 
 
 
