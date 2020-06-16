@@ -9,10 +9,19 @@ You can access a working prototype of the React app here: https://your-app-clien
 ## User Stories
 
 #### Landing Page
+Provide user a login page
 
-*Provide user a login page
+
+
+#### User Page #1
+Provide user a 
 
 ![Landing Page Design](/github-images/screenshots/landing-page.png)
+
+#### User Page #2
+Provide user a 
+
+![Landing Page Design](/github-images/screenshots/user-page-2.png)
 
 
 
@@ -21,13 +30,13 @@ You can access a working prototype of the React app here: https://your-app-clien
 ### Wireframes
 Landing/Login Page
 :-------------------------:
-![Landing/Login Page](/git-images/wireframes/landing-page-wireframes.png)
+
 
 
 ## Screenshots
 Landing/Login Page
 :-------------------------:
-![Landing Page](/git-images/screenshots/login-page-screenshot.png)
+
 
 
 ## Functionality
