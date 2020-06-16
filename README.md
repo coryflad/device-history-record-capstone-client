@@ -45,13 +45,6 @@ Provide user a page to provide the final approved test results
 
 
 
-
-### Wireframes
-Landing/Login Page
-:-------------------------:
-
-
-
 ## Screenshots
 Landing/Login Page
 :-------------------------:
