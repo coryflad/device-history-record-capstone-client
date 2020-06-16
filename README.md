@@ -12,31 +12,31 @@ You can access a working prototype of the React app here: https://your-app-clien
 Provide user a login paged
 :-------------------------:
 
-#### User Page #1
+### User Page #1
 Provide user a 
 :-------------------------:
 
 ![Landing Page Design](/github-images/screenshots/landing-page.png)
 
-#### User Page #2
+### User Page #2
 Provide user a page to record test data
 :-------------------------:
 
 ![Landing Page Design](/github-images/screenshots/user-page-2.png)
 
-#### User Page #3
+### User Page #3
 Provide user a page to record inspection record keeping
 :-------------------------:
 
 ![Landing Page Design](/github-images/screenshots/user-page-3.png)
 
-#### Defect Log
+### Defect Log
 Provide user a page to record rework and its acceptance activities
 :-------------------------:
 
 ![Landing Page Design](/github-images/screenshots/defect-log.png)
 
-#### User Page #4
+### User Page #4
 Provide user a page to provide the final approved test results
 :-------------------------:
 
