@@ -8,10 +8,9 @@ You can access a working prototype of the React app here: https://your-app-clien
 
 ## User Stories
 
-#### Landing Page
-Provide user a login page
-
-
+### Landing Page
+Provide user a login paged
+:-------------------------:
 
 #### User Page #1
 Provide user a 
