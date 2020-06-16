@@ -6,7 +6,7 @@ A app to track medical device history records
 You can access a working prototype of the React app here: https://your-app-client.herokuapp.com/ and Node app here: https://your-app-server.herokuapp.com/
 
 
-## User Stories
+## User Stories / Wireframe
 
 ### Landing Page
 Provide user a login paged
