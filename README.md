@@ -7,12 +7,14 @@ You can access a working prototype of the React app here: https://your-app-clien
 
 
 ## User Stories
-This app is for two types of users: a visitor and a logged-in user
 
 #### Landing Page
-* as a visitor
-* I want to understand what I can do with this app (or sign up, or log in)
-* so I can decide if I want to use it
+
+*Provide user a login page
+
+![Landing Page Design](/github-images/landing-page.png)
+
+
 
 
 
