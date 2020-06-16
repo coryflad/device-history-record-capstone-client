@@ -15,11 +15,13 @@ Provide user a login page
 
 #### User Page #1
 Provide user a 
+:-------------------------:
 
 ![Landing Page Design](/github-images/screenshots/landing-page.png)
 
 #### User Page #2
 Provide user a page to record test data
+:-------------------------:
 
 ![Landing Page Design](/github-images/screenshots/user-page-2.png)
 
