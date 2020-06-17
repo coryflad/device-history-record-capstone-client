@@ -8,17 +8,17 @@ You can access a working prototype of the React app here: https://your-app-clien
 
 ## User Stories / Wireframe
 
+### Login Page
+Provide user a login page
+:-------------------------:
+
+![Login Page Design](/github-images/screenshots/login.png)
+
 ### Landing Page
-Provide user a login paged
+Provide user a landing page
 :-------------------------:
 
-![Landing Page Design](/github-images/screenshots/login.png)
-
-### User Page #1
-Provide user a 
-:-------------------------:
-
-![User Page #1 Design](/github-images/screenshots/landing-page.png)
+![Landing Page Design](/github-images/screenshots/landing-page.png)
 
 ### User Page #2
 Provide user a page to record test data
