@@ -12,17 +12,19 @@ You can access a working prototype of the React app here: https://your-app-clien
 Provide user a login paged
 :-------------------------:
 
+![Landing Page Design](/github-images/screenshots/login.png)
+
 ### User Page #1
 Provide user a 
 :-------------------------:
 
-![Landing Page Design](/github-images/screenshots/landing-page.png)
+![User Page #1 Design](/github-images/screenshots/landing-page.png)
 
 ### User Page #2
 Provide user a page to record test data
 :-------------------------:
 
-![Landing Page Design](/github-images/screenshots/user-page-2.png)
+![User Page #2 Design](/github-images/screenshots/user-page-2.png)
 
 ### User Page #3
 Provide user a page to record inspection record keeping
