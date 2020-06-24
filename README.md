@@ -57,6 +57,7 @@ Provide user a page to provide the final approved test results
 ## Functionality
 The app's functionality includes:
 * Every User has the ability to create an account
+* Provide user with the ability to record the build history of a medical device assembly
 
 ## Business Objects (back-end structure)
 * users (database table)
