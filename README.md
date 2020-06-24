@@ -41,15 +41,9 @@ Provide user a page to provide the final approved test results
 ## Screenshots
 
 ### Login Page
-Provide user a login page
-:-------------------------:
-
 ![Login Page Design](/github-images/screenshots/login.png)
 
 ### Landing Page
-Provide user a landing page
-:-------------------------:
-
 ![Landing Page Design](/github-images/screenshots/landing-page.png)
 
 
