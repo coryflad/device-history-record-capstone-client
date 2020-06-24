@@ -111,7 +111,8 @@ App is built to be usable on mobile devices, as well as responsive across mobile
 
 ## Development Roadmap
 This is v1.0 of the app, but future enhancements are expected to include:
-* add more functionality
+* add the ability to use a bar code reader for data entry
+* add the ability to upload photos of product ID labels
 
 ## How to run it
 Use command line to navigate into the project folder and run the following in terminal
