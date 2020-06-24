@@ -60,7 +60,7 @@ Provide user a page to provide the final approved test results
 The app's functionality includes:
 * Every User has the ability to create an account
 * Provide user with the ability to record the build history of a medical device assembly
-* Provide validation for pass/fail criteria
+
 
 ## Business Objects (back-end structure)
 * users (database table)
@@ -105,15 +105,16 @@ The app's functionality includes:
 
 ## API Documentation
 API Documentation details:
-* get all users
+* Get all users
 
 ## Responsive
 App is built to be usable on mobile devices, as well as responsive across mobile, tablet, laptop, and desktop screen resolutions.
 
 ## Development Roadmap
 This is v1.0 of the app, but future enhancements are expected to include:
-* add the ability to use a bar code reader for data entry
-* add the ability to upload photos of product ID labels
+* Add the ability to use a bar code reader for data entry
+* Add the ability to upload photos of product ID labels
+* Provide validation for pass/fail criteria
 
 ## How to run it
 Use command line to navigate into the project folder and run the following in terminal
