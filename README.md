@@ -11,11 +11,13 @@ You can access a working prototype of the React app here: https://your-app-clien
 ### Login Page
 Provide user a page login
 :-------------------------:
+
 ![Login Page](/github-images/wireframes/login.png)
 
 ### Landing Page
 Provide user a landing page
 :-------------------------:
+
 ![Login Page](/github-images/wireframes/landing.png)
 
 ### User Page #1
