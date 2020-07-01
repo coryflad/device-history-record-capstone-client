@@ -112,6 +112,7 @@ App is built to be usable on mobile devices, as well as responsive across mobile
 
 ## Development Roadmap
 This is v1.0 of the app, but future enhancements are expected to include:
+* Provide a way to print the Device History Record to .pdf, or to paper
 * Add the ability to use a bar code reader for data entry
 * Add the ability to upload photos of product ID labels
 * Provide validation for pass/fail criteria
