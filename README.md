@@ -62,7 +62,21 @@ The app's functionality includes:
 * Provide user with the ability to record the build history of a medical device assembly
 
 
-## Business Objects (back-end structure)
+## Technology
+* Front-End: HTML5, CSS3, JavaScript ES6, React
+* Back-End: Node.js, Express.js, Mocha, Chai, RESTful API Endpoints, Postgres
+* Development Environment: Heroku, DBeaver
+
+## Front-end Structure - React Components Map
+* __Index.js__ (stateless)
+    * __App.js__ (stateful)
+        * __LandingPage.js__ (stateful) - gets the _"prop name"_ and the _"callback prop name"_ from the __App.js__
+            * __Login.js__ (stateful) -
+            * __Register.js__ (stateful) -
+        * __Navbar.js__ (stateless) -
+
+
+## Backend Structure - Business Objects
 * users (database table)
    * id (auto-generated)
    * email (example: jsmith@domain.com; validation: email validation)
@@ -99,11 +113,6 @@ The app's functionality includes:
    * last_name (example: Smith; validation: varchar 255 characters  )
    * qa_approval (example: true; validation: boolean integer )
    * user_entry (example: text; validation: varchar 255 characters )
-
-## Technology
-* Front-End: HTML5, CSS3, JavaScript ES6, React
-* Back-End: Node.js, Express.js, Mocha, Chai, RESTful API Endpoints, Postgres
-* Development Environment: Heroku, DBeaver
 
 ## API Documentation
 API Documentation details:
