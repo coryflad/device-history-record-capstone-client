@@ -20,17 +20,17 @@ Provide user a landing page
 
 ![Login Page](/github-images/wireframes/landing.png)
 
-### Device History Record - Technician View (buisness objects)
+### Device History Record - MFG Technician View (buisness objects)
 Provide user a page to record test data
 :-------------------------:
 
-![User Page #2 Design](/github-images/wireframes/user-page-1.png)
+![Device History Record - MFG Tech View (buisness objects)](/github-images/wireframes/DHR-buisness.png)
 
-### User Page #2
-Provide user a page to record inspection record keeping
+### Device History Record - MFG Technician View (sample-view)
+Provide user a page to record test data
 :-------------------------:
 
-![Landing Page Design](/github-images/wireframes/user-page-2.png)
+![Device History Record - MFG Tech View (sample-view)](/github-images/wireframes/DHR-sample.png)
 
 ### Defect Log
 Provide user a page to record rework and its acceptance activities
@@ -87,16 +87,16 @@ The app's functionality includes:
    * id (auto-generated)
    * device_id (example: 123456789; validation: integer 255 )
    * device_name (example: 3.0T RF Trap; validation: varchar 255 characters )
-   * assembly_no (example: ABC1234; validation: varchar 255 characters )
-   * dmr_no (example: ABC1234DMR; validation: varchar 255 characters )
-   * device_sn (example: 123456789; validation: integer 255 )
-   * wo_no (example: 1234; validation: integer 255 )
-   * mfg_date (example: DDMMYYYY; validation: integer 255 )
-   * network_analyzer (example: 1234; validation: integer 255 )
-   * power_supply (example: 1234; validation: integer 255 )
-   * s21_probe (example: 1234; validation: integer 255 )
-   * calibration_standard (example: 1234; validation: integer 255 )
-* tests (database table)
+   * assembly_no (example: 3.0T-124801; validation: varchar 255 characters )
+   * dmr_no (example: 3.0T-124DMR; validation: varchar 255 characters )
+   * device_sn (example: 20206589; validation: integer 255 )
+   * wo_no (example: 4578; validation: integer 255 )
+   * todays_date (example: 27-04-2020; validation: integer 255 )
+   * network_analyzer (example: 2789; validation: integer 255 )
+   * power_supply (example: 1007; validation: integer 255 )
+   * s21_probe (example: 0078; validation: integer 255 )
+   * calibration_standard (example: 0003; validation: integer 255 )
+* tests (database table)11
    * id (auto-generated)
    * device_id (example: 123456789; validation: integer 255 )
    * db_value_user_entry (example: -15; validation: varchar 255 characters )
