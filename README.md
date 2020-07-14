@@ -26,7 +26,7 @@ Provide user a page to record test data
 
 ![Device History Record - MFG Tech View (buisness objects)](/github-images/wireframes/DHR-buisness.png)
 
-### Device History Record - MFG Technician View (sample-view)
+### Device History Record - MFG Technician View (sample view)
 Provide user a page to record test data
 :-------------------------:
 
