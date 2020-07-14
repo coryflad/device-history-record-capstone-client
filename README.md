@@ -30,7 +30,7 @@ Provide user a page to record test data
 Provide user a page to record test data
 :-------------------------:
 
-![Device History Record - MFG Tech View (sample-view)](/github-images/wireframes/DHR-sample.png)
+![Device History Record - MFG Tech View (sample view)](/github-images/wireframes/DHR-sample.png)
 
 ### Defect Log
 Provide user a page to record rework and its acceptance activities
