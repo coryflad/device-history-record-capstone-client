@@ -20,7 +20,7 @@ Provide user a landing page
 
 ![Login Page](/github-images/wireframes/landing.png)
 
-### User Page #1
+### Device History Record - Technician View (buisness objects)
 Provide user a page to record test data
 :-------------------------:
 
