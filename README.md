@@ -20,19 +20,23 @@ Provide user a landing page
 
 ![Login Page](/github-images/wireframes/landing.png)
 
-### Device History Record - MFG Technician View (buisness objects)
+### Device History Record - Buisness Objects
 Provide user a page to record test data
 :-------------------------:
 
 ![Device History Record - MFG Tech View (buisness objects)](/github-images/wireframes/DHR-buisness.png)
 
-### Device History Record - MFG Technician View (sample view)
+### Device History Record - Sample View
 Provide user a page to record test data
 :-------------------------:
 
 ![Device History Record - MFG Tech View (sample view)](/github-images/wireframes/DHR-sample.png)
 
-### Defect Log
+### Defect Log - Buisness Objects
+Provide user a page to record rework and its acceptance activities
+:-------------------------:
+
+### Defect Log - Sample View
 Provide user a page to record rework and its acceptance activities
 :-------------------------:
 
