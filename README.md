@@ -20,27 +20,38 @@ Provide user a landing page
 
 ![Login Page](/github-images/wireframes/landing.png)
 
+
 ### Device History Record - Buisness Objects
 Provide user a page to record test data
 :-------------------------:
 
-![Device History Record - MFG Tech View (buisness objects)](/github-images/wireframes/DHR-buisness.png)
+![Device History Record - (buisness objects)](/github-images/wireframes/device-history-buisness-objects.png)
+
 
 ### Device History Record - Sample View
 Provide user a page to record test data
 :-------------------------:
 
-![Device History Record - MFG Tech View (sample view)](/github-images/wireframes/DHR-sample.png)
+![Device History Record - (sample view)](/github-images/wireframes/device-history-sample.png)
+
+
 
 ### Defect Log - Buisness Objects
 Provide user a page to record rework and its acceptance activities
 :-------------------------:
 
+![Defect Log - (buisness objects)](/github-images/wireframes/defect-log-buisness-objects.png)
+
+
+
 ### Defect Log - Sample View
 Provide user a page to record rework and its acceptance activities
 :-------------------------:
 
-![Landing Page Design](/github-images/wireframes/defect-log.png)
+![Defect Log - (buisness objects)](/github-images/wireframes/defect-log-sample.png)
+
+
+
 
 ### User Page #3
 Provide user a page to provide the final approved test results
@@ -83,7 +94,7 @@ The app's functionality includes:
 ## Backend Structure - Business Objects
 * users (database table)
    * id (auto-generated)
-   * email (example: jsmith@domain.com; validation: email validation)
+   * username (example: jsmith; validation: email validation)
    * password (validation: min 8 chars; one symbol and a capital letter)
    * first_name (example: Jimmy; validation: varchar 255 characters )
    * last_name (example: Smith; validation: varchar 255 characters)
@@ -107,7 +118,7 @@ The app's functionality includes:
    * db_limit (example: -10; validation: varchar 255 characters )
    * freq_value (example: 127.72MHz; validation: varchar 255 characters )
    * cap_value (example: 2.4pF; validation: varchar 255 characters )
-   * ncm_no (example: YY-123; validation: varchar 255 characters )
+   * ncm_no (example: 20-123; validation: varchar 255 characters )
    * qa_approval (example: true; validation: boolean integer )
 * defect_log (database table)
    * id (auto-generated)
