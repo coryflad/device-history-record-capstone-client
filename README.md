@@ -8,17 +8,11 @@ You can access a working prototype of the React app here: https://your-app-clien
 
 ## User Stories / Wireframe
 
-### Login Page
+### Login Page / Landing Page - Buisness Objects
 Provide user a page login
 :-------------------------:
 
-![Login Page](/github-images/wireframes/login.png)
-
-### Landing Page
-Provide user a landing page
-:-------------------------:
-
-![Login Page](/github-images/wireframes/landing.png)
+![Login Page](/github-images/wireframes/login-landing.png)
 
 
 ### Device History Record - Buisness Objects
@@ -49,16 +43,6 @@ Provide user a page to record rework and its acceptance activities
 :-------------------------:
 
 ![Defect Log - (buisness objects)](/github-images/wireframes/defect-log-sample.png)
-
-
-
-
-### User Page #3
-Provide user a page to provide the final approved test results
-:-------------------------:
-
-![Landing Page Design](/github-images/wireframes/user-page-3.png)
-
 
 
 ## Screenshots
