@@ -74,7 +74,7 @@ Provide user a page to record rework and its acceptance activities
 
 ## Functionality
 The app's functionality includes:
-* Every User has the ability to create an account
+* Every user has the ability to create an account
 * Provide user with the ability to record the build history of a medical device assembly
 
 
