@@ -61,11 +61,14 @@ Provide user a page to record rework and its acceptance activities
 
 ## Screenshots
 
-### Login Page
-![Login Page Design](/github-images/screenshots/login.png)
+### Login
 
-### Landing Page
-![Landing Page Design](/github-images/screenshots/landing-page.png)
+### Landing
+
+### Registration
+
+### Device History Record
+
 
 
 
