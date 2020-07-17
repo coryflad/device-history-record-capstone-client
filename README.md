@@ -8,11 +8,25 @@ You can access a working prototype of the React app here: https://your-app-clien
 
 ## User Stories / Wireframe
 
-### Login Page / Landing Page - Buisness Objects
-Provide user a page login
+### Login Page - Buisness Objects
+Provide user a login page
 :-------------------------:
 
-![Login Page](/github-images/wireframes/login-landing.png)
+![Login Page](/github-images/wireframes/login.png)
+
+
+### Landing Page - Buisness Objects
+Provide user a landing page
+:-------------------------:
+
+![Landing Page](/github-images/wireframes/landing.png)
+
+
+### Registration Page - Buisness Objects
+Provide user a registration page
+:-------------------------:
+
+![Landing Page](/github-images/wireframes/registration.png)
 
 
 ### Device History Record - Buisness Objects
