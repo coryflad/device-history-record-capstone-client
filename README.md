@@ -8,35 +8,35 @@ You can access a working prototype of the React app here: https://your-app-clien
 
 ## User Stories / Wireframe
 
-### Sign-In Page - Buisness Objects
+### Sign-In Page - (buisness objects)
 Provide user a Sign-In page
 :-------------------------:
 
 ![Login Page](/github-images/wireframes/sign-in.png)
 
 
-### Landing Page - Buisness Objects
+### Landing Page - (buisness objects)
 Provide user a landing page
 :-------------------------:
 
 ![Landing Page](/github-images/wireframes/landing.png)
 
 
-### Registration Page - Buisness Objects
+### Registration Page - (buisness objects)
 Provide user a registration page
 :-------------------------:
 
-![Landing Page](/github-images/wireframes/registration.png)
+![Registration Page](/github-images/wireframes/registration.png)
 
 
-### Device History Record - Buisness Objects
+### Device History Record - (buisness objects)
 Provide user a page to record test data
 :-------------------------:
 
 ![Device History Record - (buisness objects)](/github-images/wireframes/device-history-buisness-objects.png)
 
 
-### Device History Record - Sample View
+### Device History Record - (sample view)
 Provide user a page to record test data
 :-------------------------:
 
@@ -44,7 +44,7 @@ Provide user a page to record test data
 
 
 
-### Defect Log - Buisness Objects
+### Defect Log - (buisness objects)
 Provide user a page to record rework and its acceptance activities
 :-------------------------:
 
@@ -52,11 +52,11 @@ Provide user a page to record rework and its acceptance activities
 
 
 
-### Defect Log - Sample View
+### Defect Log - (sample view)
 Provide user a page to record rework and its acceptance activities
 :-------------------------:
 
-![Defect Log - (buisness objects)](/github-images/wireframes/defect-log-sample.png)
+![Defect Log - (sample view)](/github-images/wireframes/defect-log-sample.png)
 
 
 ## Screenshots
