@@ -8,11 +8,11 @@ You can access a working prototype of the React app here: https://your-app-clien
 
 ## User Stories / Wireframe
 
-### Login Page - Buisness Objects
-Provide user a login page
+### Sign-In Page - Buisness Objects
+Provide user a Sign-In page
 :-------------------------:
 
-![Login Page](/github-images/wireframes/login.png)
+![Login Page](/github-images/wireframes/sign-in.png)
 
 
 ### Landing Page - Buisness Objects
@@ -61,11 +61,11 @@ Provide user a page to record rework and its acceptance activities
 
 ## Screenshots
 
-### Login
+### Sign-In Page
 
-### Landing
+### Landing Page
 
-### Registration
+### Registration Page
 
 ### Device History Record
 
@@ -95,10 +95,8 @@ The app's functionality includes:
 ## Backend Structure - Business Objects
 * users (database table)
    * id (auto-generated)
-   * username (example: jsmith; validation: email validation)
+   * email (example: jsmith@gmail.com; validation: email validation)
    * password (validation: min 8 chars; one symbol and a capital letter)
-   * first_name (example: Jimmy; validation: varchar 255 characters )
-   * last_name (example: Smith; validation: varchar 255 characters)
 * devices (database table)
    * id (auto-generated)
    * device_id (example: 123456789; validation: integer 255 )
