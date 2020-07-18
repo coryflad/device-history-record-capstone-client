@@ -8,8 +8,8 @@ You can access a working prototype of the React app here: https://your-app-clien
 
 ## User Stories / Wireframe
 
-### Sign-In Page - (buisness objects)
-Provide user a Sign-In page
+### Sign In Page - (buisness objects)
+Provide user a Sign In page
 :-------------------------:
 
 ![Login Page](/github-images/wireframes/sign-in.png)
