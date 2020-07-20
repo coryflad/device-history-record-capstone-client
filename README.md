@@ -63,9 +63,15 @@ Provide user a page to record rework and its acceptance activities
 
 ### Sign-In Page
 
+![Sign-In Page](/github-images/screenshots/sign-in.png)
+
 ### Landing Page
 
+![Landing Page](/github-images/screenshots/landing.png)
+
 ### Registration Page
+
+![Registration Page](/github-images/screenshots/registration.png)
 
 ### Device History Record
 
