@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>DHR Capstone</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" type="text/css" href="DHR.css" />
+</head>
+
+<body>
+
+    <section class="sign-in">
+        <form class="sign-in-form">
+            <h1>DHR Sign-In</h1>
+            <h5 class="form-error">Username and password incorrect</h5>
+            <div class="form-item">
+                <label for="sign-in-email">Email</label>
+                <input type="text" placeholder="email" required="" id="sign-in-email" />
+            </div>
+            <div class="form-item">
+                <label for="sign-in-password">Password</label>
+                <input type="text" placeholder="password" required="" id="sign-in-password" />
+            </div>
+            <div class="form-item">
+                <input type="submit" value="Sign-In" />
+                <p>Need to create an account? <a href="#">Register</a></p>
+            </div>
+        </form>
+    </section>
+
+    <section class="registration">
+        <form class="registration-form">
+            <h1>DHR Registration</h1>
+            <h5 class="form-error">Password does not meet complexity requirements</h5>
+            <div class="form-item">
+                <label for="register-email">Email</label>
+                <input type="text" placeholder="email" required="" id="register-email" />
+            </div>
+            <div class="form-item">
+                <label for="register-password">Password</label>
+                <input type="text" placeholder="password" required="" id="register-password" />
+            </div>
+            <div class="form-item">
+                <label for="register-confirm-password">Confirm Password</label>
+                <input type="text" placeholder="confirm-password" required="" id="register-confirm-password" />
+            </div>
+            <div class="form-item">
+                <input type="submit" value="Register" />
+                <p>Already have an account? <a href="#">Sign In</a></p>
+            </div>
+        </form>
+    </section>
+
+    <section class="landing-page">
+        <form class="select-product-form">
+            <h2>Good Morning Jimmy Smith!</h2>
+            <div class="form-item">
+                <label for="device_name">Which device are you testing?:</label>
+                <select name="device_name" id="device_name">
+                    <option value="1.5T">1.5T RF Trap</option>
+                    <option value="3.0T">3.0T RF Trap</option>
+                </select>
+            </div>
+            <div class="form-item">
+                <label for="wo_no">Which work order?:</label>
+                <select name="wo_no" id="wo_no">
+                    <option value="4710">4710</option>
+                    <option value="4718">4718</option>
+                    <option value="4725">4725</option>
+                    <option value="4731">4731</option>
+                </select>
+            </div>
+            <div class="form-item">
+                <label for="device_sn">Which serial number?:</label>
+                <select name="device_sn" id="device_sn">
+                    <option value="4710">20206589</option>
+                    <option value="4718">20206590</option>
+                    <option value="4725">20206591</option>
+                    <option value="4731">20206592</option>
+                </select>
+            </div>
+            <div class="form-item">
+                <input type="submit" value="Enter DHR" />
+            </div>
+        </form>
+    </section>
+
+    <section class="Dhr-page">
+        <div class="divTable blueTable">
+            <div class="divTableHeading">
+                <div class="divTableRow">
+                    <div class="divTableHead">Description</div>
+                    <div class="divTableHead">Identfier</div>
+                </div>
+            </div>
+            <div class="divTableBody">
+                <div class="divTableRow">
+                    <div class="divTableCell">Assembly Name</div>
+                    <div class="divTableCell">3.0T RF Trap</div>
+                </div>
+                <div class="divTableRow">
+                    <div class="divTableCell">Assembly No.</div>
+                    <div class="divTableCell">3.0T-124801</div>
+                </div>
+                <div class="divTableRow">
+                    <div class="divTableCell">Applicable DMR</div>
+                    <div class="divTableCell">3.0T-124DMR</div>
+                </div>
+                <div class="divTableRow">
+                    <div class="divTableCell">Device S/N</div>
+                    <div class="divTableCell">24106589</div>
+                </div>
+                <div class="divTableRow">
+                    <div class="divTableCell">Work Order No.</div>
+                    <div class="divTableCell">4578</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="divTable blueTable">
+            <div class="divTableHeading">
+                <div class="divTableRow">
+                    <div class="divTableHead">Equipment Description</div>
+                    <div class="divTableHead">Identfier</div>
+                </div>
+            </div>
+            <div class="divTableBody">
+                <div class="divTableRow">
+                    <div class="divTableCell">Network Analyzer</div>
+                    <div class="divTableCell">2789</div>
+                </div>
+                <div class="divTableRow">
+                    <div class="divTableCell">Power Supply</div>
+                    <div class="divTableCell">1007</div>
+                </div>
+                <div class="divTableRow">
+                    <div class="divTableCell">S21 Probe</div>
+                    <div class="divTableCell">0078</div>
+                </div>
+                <div class="divTableRow">
+                    <div class="divTableCell">Calibration Standard</div>
+                    <div class="divTableCell">0003</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="divTable blueTable">
+            <div class="divTableHeading">
+                <div class="divTableRow">
+                    <div class="divTableHead">Test Location</div>
+                    <div class="divTableHead">dB</div>
+                    <div class="divTableHead">Test Frequency<br>(MHz)</div>
+                    <div class="divTableHead">C2 Value<br>(pF)</div>
+                    <div class="divTableHead">C3 Value<br>(pF)</div>
+                </div>
+            </div>
+            <div class="divTableBody">
+                <div class="divTableRow">
+                    <div class="divTableCell">TP1</div>
+                    <div class="divTableCell">-15</div>
+                    <div class="divTableCell">127.72</div>
+                    <div class="divTableCell">2.7</div>
+                    <div class="divTableCell">2.2</div>
+                </div>
+                <div class="divTableRow">
+                    <div class="divTableCell">TP2</div>
+                    <div class="divTableCell">-13</div>
+                    <div class="divTableCell">127.72</div>
+                    <div class="divTableCell">3.3</div>
+                    <div class="divTableCell">3.6</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="divTable blueTable">
+            <div class="divTableHeading">
+                <div class="divTableRow">
+                    <div class="divTableHead">dB Limit</div>
+                    <div class="divTableHead">Frequency Range<br />(MHz)</div>
+                </div>
+            </div>
+            <div class="divTableBody">
+                <div class="divTableRow">
+                    <div class="divTableCell">&lt;= -10</div>
+                    <div class="divTableCell">127.47 - 127.97</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+
+</html>
