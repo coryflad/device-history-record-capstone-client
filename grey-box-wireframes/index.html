@@ -6,6 +6,7 @@
     <title>DHR Capstone</title>
     <link rel="stylesheet" type="text/css" href="style.css" />
     <link rel="stylesheet" type="text/css" href="DHR.css" />
+    <link rel="stylesheet" type="text/css" href="defect-log.css" />
 </head>
 
 <body>
@@ -87,11 +88,12 @@
     </section>
 
     <section class="Dhr-page">
+        <h2>Inspection Record</h2>
         <div class="divTable blueTable">
             <div class="divTableHeading">
                 <div class="divTableRow">
                     <div class="divTableHead">Description</div>
-                    <div class="divTableHead">Identfier</div>
+                    <div class="divTableHead">Identifier</div>
                 </div>
             </div>
             <div class="divTableBody">
@@ -115,6 +117,14 @@
                     <div class="divTableCell">Work Order No.</div>
                     <div class="divTableCell">4578</div>
                 </div>
+                <div class="divTableRow">
+                    <div class="divTableCell">Document ID No.</div>
+                    <div class="divTableCell">1</div>
+                </div>
+                <div class="divTableRow">
+                    <div class="divTableCell">Date Created</div>
+                    <div class="divTableCell">2020-08-25</div>
+                </div>
             </div>
         </div>
 
@@ -122,25 +132,30 @@
             <div class="divTableHeading">
                 <div class="divTableRow">
                     <div class="divTableHead">Equipment Description</div>
-                    <div class="divTableHead">Identfier</div>
+                    <div class="divTableHead">Identifier</div>
+                    <div class="divTableHead">Cal Due Date</div>
                 </div>
             </div>
             <div class="divTableBody">
                 <div class="divTableRow">
                     <div class="divTableCell">Network Analyzer</div>
                     <div class="divTableCell">2789</div>
+                    <div class="divTableCell">2021-01-04</div>
                 </div>
                 <div class="divTableRow">
                     <div class="divTableCell">Power Supply</div>
                     <div class="divTableCell">1007</div>
+                    <div class="divTableCell">2021-04-26</div>
                 </div>
                 <div class="divTableRow">
                     <div class="divTableCell">S21 Probe</div>
                     <div class="divTableCell">0078</div>
+                    <div class="divTableCell">2022-12-23</div>
                 </div>
                 <div class="divTableRow">
                     <div class="divTableCell">Calibration Standard</div>
                     <div class="divTableCell">0003</div>
+                    <div class="divTableCell">No Cal Required</div>
                 </div>
             </div>
         </div>
@@ -184,6 +199,89 @@
                 <div class="divTableRow">
                     <div class="divTableCell">&lt;= -10</div>
                     <div class="divTableCell">127.47 - 127.97</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="divTable blueTable">
+            <div class="divTableHeading">
+                <div class="divTableRow">
+                    <div class="divTableHead">Tested By and Date</div>
+                </div>
+            </div>
+            <div class="divTableBody">
+                <div class="divTableRow">
+                    <div class="divTableCell">Jimmy Smith 2020-08-27</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="divTable blueTable">
+            <div class="divTableHeading">
+                <div class="divTableRow">
+                    <div class="divTableHead">Inspected By and Date</div>
+                </div>
+            </div>
+            <div class="divTableBody">
+                <div class="divTableRow">
+                    <div class="divTableCell">Sally Day 2020-08-27</div>
+                </div>
+            </div>
+        </div>
+
+        <a href="#" class="myButton">Submit for QA Inspect</a>
+
+        <a href="#" class="myButton">QA Approval</a>
+
+        <a href="#" class="myButton1">QA Reject</a>
+
+        <div class="divTable blueTable">
+            <div class="divTableHeading">
+                <div class="divTableRow">
+                    <div class="divTableHead">Completed Date of Manufacture</div>
+                </div>
+            </div>
+            <div class="divTableBody">
+                <div class="divTableRow">
+                    <div class="divTableCell">2020-08-27</div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="defect-log">
+        <h2>Defect Log</h2>
+
+        <div class="divTable blueTable">
+            <div class="divTableHeading">
+                <div class="divTableRow">
+                    <div class="divTableHead">NCM 20-123<br>S/N: 24106589</div>
+                    <div class="divTableHead">Entered By</div>
+                    <div class="divTableHead">Date</div>
+                    <div class="divTableHead">Non-conformity<br>resolved? (Y/N)</div>
+                </div>
+            </div>
+            <div class="divTableBody">
+                <div class="divTableRow">
+                    <div class="divTableCell">TP#2 fails to meet dB limit</div>
+                    <div class="divTableCell">Sally Day</div>
+                    <div class="divTableCell">2020-08-27</div>
+                    <div class="divTableCell">No</div>
+                </div>
+                <div class="divTableRow">
+                    <div class="divTableCell">Found open condition at location C2<br>Add solder to C2 to remove open
+                        condition<br>Performed retest</div>
+                    <div class="divTableCell">Jimmy Smith</div>
+                    <div class="divTableCell">2020-08-27</div>
+                    <div class="divTableCell">N/A</div>
+                </div>
+                <div class="divTableRow">
+                    <div class="divTableCell">Approved solder rework at location C2<br>confirmed passing test results
+                        for TP#2</div>
+                    <div class="divTableCell">Sally Day</div>
+                    <div class="divTableCell">2020-08-27</div>
+                    <div class="divTableCell">Yes</div>
                 </div>
             </div>
         </div>
