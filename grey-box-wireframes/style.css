@@ -3,12 +3,11 @@ h1 {
   }
   
   div {
-    text-align: center;
     margin-bottom: 4px;
   }
 
   form {
-    text-align: center;
+    text-align: left;
     color: #FFFFFF;
   }
   
