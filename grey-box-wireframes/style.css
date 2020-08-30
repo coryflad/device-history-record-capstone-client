@@ -1,61 +1,229 @@
+/*
+The CSS code gets to executed from top to bottom and left ro right
+Basic rules to write CSS
+- write GENERAL rules first (for all the paragraph tags in the website for example) and only after that write CSS for SPECIFIC tags (for example the paragraph tags inside the footer)
+- write the css styles to define for the parent (outside) container and THEN the children (inside containers) of that parent and THEN the children (inside containers) of the child above
+*/
+
+
+/* -------------------------------------
+CSS reset
+Is a short set of CSS rules that resets the styling of all HTML elements to a consistent baseline so the website will look the same on all browsers
+*/
+
+/* -------------------------------------
+General styles (General Module, wrapping around the modules below)
+(the styles used everywhere in the page (like the Body) or styles which are used in more than 2 of the modules below (h2, h3, h4, h5, h6, p, a, ul, li))
+*/
+
 h1 {
-    margin-top: 60px;
-  }
-  
-  div {
-    margin-bottom: 4px;
-  }
+  margin-top: 60px;
+}
 
-  form {
-    text-align: left;
-    color: #FFFFFF;
-  }
-  
-  .sign-in {
-    border: 2px black solid;
-    background-color: #EEEEEE;
-    margin-top: 40px;
-    padding: 0px 10px 40px 10px;
-    background: -webkit-linear-gradient(top, #5592bb 0%, #327cad 66%, #1C6EA4 100%);
-    width: 80%;
-  }
-  
-  .registration {
-    border: 2px black solid;
-    margin-top: 40px;
-    padding: 0px 10px 40px 10px;
-    background: -webkit-linear-gradient(top, #5592bb 0%, #327cad 66%, #1C6EA4 100%);
-     width: 80%;
-  }
-  
-  .landing-page {
-    border: 2px black solid;
-    margin-top: 40px;
-    padding: 40px 10px 40px 10px;
-    background: -webkit-linear-gradient(top, #5592bb 0%, #327cad 66%, #1C6EA4 100%);
-    width: 80%;
-  }
+div {
+  margin-bottom: 4px;
+}
 
-  .dhr-page {
-    border: 2px black solid;
-    background-color: #EEEEEE;
-    margin-top: 40px;
-    padding: 0px 10px 40px 10px;
-    background-color: #FFFFFF;
-    width: 80%;
-  }
+/* -------------------------------------
+Header styles (Main Module)
+(all the styles inside the < header > or < nav > tags)
+*/
 
-  .defect-log {
-    border: 2px black solid;
-    background-color: #EEEEEE;
-    margin-top: 40px;
-    padding: 0px 10px 40px 10px;
-    background-color: #FFFFFF;
-    width: 80%;
-  }
+/* -------------------------------------
+Content styles (Main Module)
+(all the styles inside the < sections > or < aside > tags)
+*/
 
-  .form-error {
-    color: #f24537;
-  }
+form {
+  text-align: left;
+  color: #FFFFFF;
+}
+
+.sign-in {
+  border: 2px black solid;
+  background-color: #EEEEEE;
+  margin-top: 40px;
+  padding: 0px 10px 40px 10px;
+  background: -webkit-linear-gradient(top, #5592bb 0%, #327cad 66%, #1C6EA4 100%);
+  width: 80%;
+}
+
+.registration {
+  border: 2px black solid;
+  margin-top: 40px;
+  padding: 0px 10px 40px 10px;
+  background: -webkit-linear-gradient(top, #5592bb 0%, #327cad 66%, #1C6EA4 100%);
+   width: 80%;
+}
+
+.landing-page {
+  border: 2px black solid;
+  margin-top: 40px;
+  padding: 40px 10px 40px 10px;
+  background: -webkit-linear-gradient(top, #5592bb 0%, #327cad 66%, #1C6EA4 100%);
+  width: 80%;
+}
+
+.dhr-page {
+  border: 2px black solid;
+  background-color: #EEEEEE;
+  margin-top: 40px;
+  padding: 0px 10px 40px 10px;
+  background-color: #FFFFFF;
+  width: 80%;
+}
+
+.defect-log {
+  border: 2px black solid;
+  background-color: #EEEEEE;
+  margin-top: 40px;
+  padding: 0px 10px 40px 10px;
+  background-color: #FFFFFF;
+  width: 80%;
+}
+
+.form-error {
+  color: #f24537;
+}
+
+div.blueTable {
+  border: 1px solid #1C6EA4;
+  margin-top: 10px;
+  background-color: #EEEEEE;
+  width: 50%;
+  text-align: left;
+  border-collapse: collapse;
+}
+
+.divTable.blueTable .divTableCell, .divTable.blueTable .divTableHead {
+  border: 1px solid #AAAAAA;
+  padding: 3px 2px;
+}
+
+.divTable.blueTable .divTableBody .divTableCell {
+  font-size: 13px;
+}
+
+.divTable.blueTable .divTableRow:nth-child(even) {
+  background: #D0E4F5;
+}
+
+.divTable.blueTable .divTableHeading {
+  background: #1C6EA4;
+  background: -moz-linear-gradient(top, #5592bb 0%, #327cad 66%, #1C6EA4 100%);
+  background: -webkit-linear-gradient(top, #5592bb 0%, #327cad 66%, #1C6EA4 100%);
+  background: linear-gradient(to bottom, #5592bb 0%, #327cad 66%, #1C6EA4 100%);
+  border-bottom: 2px solid #444444;
+}
+
+.divTable.blueTable .divTableHeading .divTableHead {
+  font-size: 15px;
+  font-weight: bold;
+  color: #FFFFFF;
+  text-align: left;
+  border-left: 2px solid #D0E4F5;
+}
+
+.divTable.blueTable .divTableHeading .divTableHead:first-child {
+  border-left: none;
+}
+
+.blueTable .tableFootStyle {
+  font-size: 14px;
+}
+
+.blueTable .tableFootStyle .links {
+     text-align: right;
+}
+
+.blueTable .tableFootStyle .links a{
+  display: inline-block;
+  background: #1C6EA4;
+  color: #FFFFFF;
+  padding: 2px 8px;
+  border-radius: 5px;
+}
+
+.blueTable.outerTableFooter {
+  border-top: none;
+}
+
+.blueTable.outerTableFooter .tableFootStyle {
+  padding: 3px 5px; 
+}
+
+.divTable{ display: table; }
+.divTableRow { display: table-row; }
+.divTableHeading { display: table-header-group;}
+.divTableCell, .divTableHead { display: table-cell;}
+.divTableHeading { display: table-header-group;}
+.divTableFoot { display: table-footer-group;}
+.divTableBody { display: table-row-group;}
+
+.myButton {
+  box-shadow:inset 0px 1px 0px 0px #a4e271;
+  background:linear-gradient(to bottom, #89c403 5%, #77a809 100%);
+  background-color:#89c403;
+  border-radius:6px;
+  border:1px solid #74b807;
+  display:inline-block;
+  cursor:pointer;
+  color:#ffffff;
+  font-family:Arial;
+  font-size:15px;
+  font-weight:bold;
+  padding:6px 24px;
+  text-decoration:none;
+  text-shadow:0px 1px 0px #528009;
+}
+.myButton:hover {
+  background:linear-gradient(to bottom, #77a809 5%, #89c403 100%);
+  background-color:#77a809;
+}
+.myButton:active {
+  position:relative;
+  top:1px;
+}
+
+.myButton1 {
+  box-shadow:inset 0px 1px 0px 0px #f5978e;
+  background:linear-gradient(to bottom, #f24537 5%, #c62d1f 100%);
+  background-color:#f24537;
+  border-radius:6px;
+  border:1px solid #d02718;
+  display:inline-block;
+  cursor:pointer;
+  color:#ffffff;
+  font-family:Arial;
+  font-size:15px;
+  font-weight:bold;
+  padding:6px 24px;
+  text-decoration:none;
+  text-shadow:0px 1px 0px #810e05;
+}
+.myButton1:hover {
+  background:linear-gradient(to bottom, #c62d1f 5%, #f24537 100%);
+  background-color:#c62d1f;
+}
+.myButton1:active {
+  position:relative;
+  top:1px;
+}
+
+/* -------------------------------------
+Footer styles (Main Module)
+(all the styles inside the < footer > tag)
+*/
+
+/* -------------------------------------
+place all the desktop styles above this line
+Responsive styles
+(the very last module in the CSS, contains all the media queries and it is dealing with the compatibility with mobiles and tablets)
+place all the mobile tables styles below this line
+*/
+
+
+  
+
 
   
