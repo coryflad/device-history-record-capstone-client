@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <title>DHR Capstone</title>
     <link rel="stylesheet" type="text/css" href="style.css" />
+    <script src="https://kit.fontawesome.com/3075e528fd.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -12,7 +13,12 @@
     <section class="sign-in">
         <form class="sign-in-form">
             <h1>DHR Sign-In</h1>
-            <h5 class="form-error">Username and password incorrect</h5>
+            <div class="alert alert-info">
+                <i class="fas fa-info"></i> <strong>Info!</strong> Please enter username and password!
+            </div>
+            <div class="alert alert-warning">
+                <i class="fas fa-exclamation"></i> <strong>Warning!</strong> Username or password incorrect!!
+            </div>
             <div class="form-item">
                 <label for="sign-in-email">Email</label>
                 <input type="text" placeholder="email" required="" id="sign-in-email" />
@@ -28,10 +34,20 @@
         </form>
     </section>
 
+
     <section class="registration">
         <form class="registration-form">
             <h1>DHR Registration</h1>
-            <h5 class="form-error">Password does not meet complexity requirements</h5>
+            <div class="alert alert-success">
+                <i class="fas fa-check"></i> <strong>Success!</strong> Account Activated Sucessfully!!
+            </div>
+            <div class="alert alert-warning">
+                <i class="fas fa-exclamation"></i> <strong>Warning!</strong> Password does not meet complexity
+                requirements!!
+            </div>
+            <div class="alert alert-failure">
+                <i class="fas fa-times"></i> <strong>Failure!</strong> Registration Failed!!
+            </div>
             <div class="form-item">
                 <label for="register-email">Email</label>
                 <input type="text" placeholder="email" required="" id="register-email" />
@@ -54,7 +70,9 @@
     <section class="landing-page">
         <form class="select-product-form">
             <h1>Good Morning Jimmy Smith!</h1>
-            <h5 class="form-error">Please Select a Device</h5>
+            <div class="alert alert-info">
+                <i class="fas fa-info"></i> <strong>Info!</strong> Please select a device!!
+            </div>
             <div class="form-item">
                 <label for="device_name">Which device are you testing?:</label>
                 <select name="device_name" id="device_name">
@@ -87,7 +105,7 @@
     </section>
 
     <section class="dhr-page">
-        
+
         <h2>DHR</h2>
         <h3>UUT</h3>
         <div class="divTable blueTable">
@@ -189,7 +207,7 @@
                 </div>
             </div>
         </div>
-        
+
         <h3>Test Limits</h3>
         <div class="divTable blueTable">
             <div class="divTableHeading">

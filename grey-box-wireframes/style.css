@@ -43,16 +43,7 @@ label {
 }
 
 
-input  {
-  padding: 5px 10px;
-  width: 50%;
-  display: block;
-  margin: 20px auto;
-  border-radius: 6px;
-  border: 1px solid #CCC;
-}
-
-select {
+input, select {
   padding: 5px 10px;
   width: 50%;
   display: block;
@@ -109,7 +100,6 @@ form {
   padding: 0px 10px 40px 10px;
   background-color: #FFFFFF;
   width: 80%;
-  
 }
 
 .defect-log {
@@ -119,11 +109,6 @@ form {
   padding: 0px 10px 40px 10px;
   background-color: #FFFFFF;
   width: 80%;
-}
-
-.form-error {
-  color: #f24537;
-  text-align: center;
 }
 
 div.blueTable {
@@ -259,6 +244,29 @@ div.blueTable {
   top:1px;
 }
 
+.alert {
+  padding: 4px;
+  text-align: center;
+  border-radius: 6px;
+  color: black;
+}
+
+.alert-success {
+  background-color: lightgreen;
+}
+
+.alert-warning {
+  background-color: lightgoldenrodyellow;
+  
+}
+
+.alert-failure {
+  background-color: lightpink
+}
+
+.alert-info {
+  background-color: lightgray;
+}
 
 
 /* -------------------------------------
