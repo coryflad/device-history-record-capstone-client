@@ -22,7 +22,7 @@
                 <input type="text" placeholder="password" required="" id="sign-in-password" />
             </div>
             <div class="form-item">
-                <input type="submit" value="Sign-In" />
+                <a href="#" class="myButton">Sign-In</a>
                 <p>Need to create an account? <a href="#">Register</a></p>
             </div>
         </form>
@@ -45,7 +45,7 @@
                 <input type="text" placeholder="confirm-password" required="" id="register-confirm-password" />
             </div>
             <div class="form-item">
-                <input type="submit" value="Register" />
+                <a href="#" class="myButton">Register</a>
                 <p>Already have an account? <a href="#">Sign In</a></p>
             </div>
         </form>
@@ -53,7 +53,8 @@
 
     <section class="landing-page">
         <form class="select-product-form">
-            <h2>Good Morning Jimmy Smith!</h2>
+            <h1>Good Morning Jimmy Smith!</h1>
+            <h5 class="form-error">Please Select a Device</h5>
             <div class="form-item">
                 <label for="device_name">Which device are you testing?:</label>
                 <select name="device_name" id="device_name">
@@ -80,13 +81,15 @@
                 </select>
             </div>
             <div class="form-item">
-                <input type="submit" value="Enter DHR" />
+                <a href="#" class="myButton">Search for DHR</a>
             </div>
         </form>
     </section>
 
     <section class="dhr-page">
+        
         <h2>DHR</h2>
+        <h3>UUT</h3>
         <div class="divTable blueTable">
             <div class="divTableHeading">
                 <div class="divTableRow">
@@ -126,6 +129,7 @@
             </div>
         </div>
 
+        <h3>Equipment Used</h3>
         <div class="divTable blueTable">
             <div class="divTableHeading">
                 <div class="divTableRow">
@@ -157,7 +161,7 @@
                 </div>
             </div>
         </div>
-
+        <h3>Test Data</h3>
         <div class="divTable blueTable">
             <div class="divTableHeading">
                 <div class="divTableRow">
@@ -185,7 +189,8 @@
                 </div>
             </div>
         </div>
-
+        
+        <h3>Test Limits</h3>
         <div class="divTable blueTable">
             <div class="divTableHeading">
                 <div class="divTableRow">
@@ -201,6 +206,8 @@
             </div>
         </div>
 
+        <a href="#" class="myButton">Submit for QA Inspect</a>
+
         <div class="divTable blueTable">
             <div class="divTableHeading">
                 <div class="divTableRow">
@@ -214,6 +221,10 @@
             </div>
         </div>
 
+        <a href="#" class="myButton">QA Approval</a>
+
+        <a href="#" class="myButton1">QA Reject</a>
+
         <div class="divTable blueTable">
             <div class="divTableHeading">
                 <div class="divTableRow">
@@ -226,12 +237,6 @@
                 </div>
             </div>
         </div>
-
-        <a href="#" class="myButton">Submit for QA Inspect</a>
-
-        <a href="#" class="myButton">QA Approval</a>
-
-        <a href="#" class="myButton1">QA Reject</a>
 
         <div class="divTable blueTable">
             <div class="divTableHeading">

@@ -18,11 +18,50 @@ General styles (General Module, wrapping around the modules below)
 
 h1 {
   margin-top: 60px;
+  text-align: center;
 }
+
 
 div {
   margin-bottom: 4px;
 }
+
+p {
+  text-align: center;
+}
+
+section {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+label {
+  display: block;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+input  {
+  padding: 5px 10px;
+  width: 50%;
+  display: block;
+  margin: 20px auto;
+  border-radius: 6px;
+  border: 1px solid #CCC;
+}
+
+select {
+  padding: 5px 10px;
+  width: 50%;
+  display: block;
+  margin: 20px auto;
+  border-radius: 6px;
+  border: 1px solid #CCC;
+}
+
+
 
 /* -------------------------------------
 Header styles (Main Module)
@@ -35,7 +74,6 @@ Content styles (Main Module)
 */
 
 form {
-  text-align: left;
   color: #FFFFFF;
 }
 
@@ -71,6 +109,7 @@ form {
   padding: 0px 10px 40px 10px;
   background-color: #FFFFFF;
   width: 80%;
+  
 }
 
 .defect-log {
@@ -84,13 +123,14 @@ form {
 
 .form-error {
   color: #f24537;
+  text-align: center;
 }
 
 div.blueTable {
   border: 1px solid #1C6EA4;
   margin-top: 10px;
   background-color: #EEEEEE;
-  width: 50%;
+  width: 100%;
   text-align: left;
   border-collapse: collapse;
 }
@@ -161,12 +201,17 @@ div.blueTable {
 .divTableBody { display: table-row-group;}
 
 .myButton {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 4px;
+  max-width: 30%;
+  text-align: center;
   box-shadow:inset 0px 1px 0px 0px #a4e271;
   background:linear-gradient(to bottom, #89c403 5%, #77a809 100%);
   background-color:#89c403;
   border-radius:6px;
   border:1px solid #74b807;
-  display:inline-block;
+  display: block;
   cursor:pointer;
   color:#ffffff;
   font-family:Arial;
@@ -186,12 +231,16 @@ div.blueTable {
 }
 
 .myButton1 {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 30%;
+  text-align: center;
   box-shadow:inset 0px 1px 0px 0px #f5978e;
   background:linear-gradient(to bottom, #f24537 5%, #c62d1f 100%);
   background-color:#f24537;
   border-radius:6px;
   border:1px solid #d02718;
-  display:inline-block;
+  display: block;
   cursor:pointer;
   color:#ffffff;
   font-family:Arial;
@@ -209,6 +258,8 @@ div.blueTable {
   position:relative;
   top:1px;
 }
+
+
 
 /* -------------------------------------
 Footer styles (Main Module)
