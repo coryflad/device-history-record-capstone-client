@@ -10,17 +10,71 @@ Basic rules to write CSS
 CSS reset
 Is a short set of CSS rules that resets the styling of all HTML elements to a consistent baseline so the website will look the same on all browsers
 */
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  /*The box-sizing property is used to tell the browser what the sizing properties (width and height) should include border-box.*/
+  box-sizing: border-box;
+  /*reset Chrome user agent styles*/
+  -webkit-margin-before: 0px;
+  -webkit-margin-after: 0px;
+  -webkit-margin-start: 0px;
+  -webkit-margin-end: 0px;
+  -webkit-padding-before: 0px;
+  -webkit-padding-after: 0px;
+  -webkit-padding-start: 0px;
+  -webkit-padding-end: 0px;
+  /*reset Firefox user agent styles*/
+  -moz-margin-before: 0px;
+  -moz-margin-after: 0px;
+  -moz-margin-start: 0px;
+  -moz-margin-end: 0px;
+  -moz-padding-before: 0px;
+  -moz-padding-after: 0px;
+  -moz-padding-start: 0px;
+  -moz-padding-end: 0px;
+  /*reset Internet Explorer user agent styles*/
+  -ms-margin-before: 0px;
+  -ms-margin-after: 0px;
+  -ms-margin-start: 0px;
+  -ms-margin-end: 0px;
+  -ms-padding-before: 0px;
+  -ms-padding-after: 0px;
+  -ms-padding-start: 0px;
+  -ms-padding-end: 0px;
+  /*reset Opera user agent styles*/
+  -o-margin-before: 0px;
+  -o-margin-after: 0px;
+  -o-margin-start: 0px;
+  -o-margin-end: 0px;
+  -o-padding-before: 0px;
+  -o-padding-after: 0px;
+  -o-padding-start: 0px;
+  -o-padding-end: 0px;
+}
 
 /* -------------------------------------
 General styles (General Module, wrapping around the modules below)
 (the styles used everywhere in the page (like the Body) or styles which are used in more than 2 of the modules below (h2, h3, h4, h5, h6, p, a, ul, li))
 */
+body {
+  border: 3px solid white;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* font-family: 'Pacifico', cursive;
+font-family: 'Roboto', sans-serif;
+font-family: 'Sriracha', cursive; */
+
+
 
 h1 {
   margin-top: 60px;
   text-align: center;
+  font-family: 'Sriracha', cursive;
 }
-
 
 div {
   margin-bottom: 4px;
@@ -40,6 +94,7 @@ label {
   width: 50%;
   margin-left: auto;
   margin-right: auto;
+  font-family: 'Montserrat', sans-serif;
 }
 
 
@@ -50,6 +105,37 @@ input, select {
   margin: 20px auto;
   border-radius: 6px;
   border: 1px solid #CCC;
+}
+
+.myButton, button {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 4px;
+  max-width: 250px;
+  text-align: center;
+  box-shadow: inset 0px 1px 0px 0px #a4e271;
+  background: linear-gradient(to bottom, #89c403 5%, #77a809 100%);
+  background-color: #89c403;
+  border-radius: 6px;
+  border: 1px solid #74b807;
+  display: block;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: Arial;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 6px 24px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #528009;
+  width: 95%;
+}
+.myButton:hover, button:hover {
+  background:linear-gradient(to bottom, #77a809 5%, #89c403 100%);
+  background-color:#77a809;
+}
+.myButton:active, button:active {
+  position:relative;
+  top:1px;
 }
 
 
@@ -67,6 +153,7 @@ Content styles (Main Module)
 form {
   color: #FFFFFF;
 }
+
 
 .sign-in {
   border: 2px black solid;
@@ -95,10 +182,9 @@ form {
 
 .dhr-page {
   border: 2px black solid;
-  background-color: #EEEEEE;
+  background-color: lightgray;
   margin-top: 40px;
   padding: 0px 10px 40px 10px;
-  background-color: #FFFFFF;
   width: 80%;
 }
 
@@ -185,61 +271,21 @@ div.blueTable {
 .divTableFoot { display: table-footer-group;}
 .divTableBody { display: table-row-group;}
 
-.myButton {
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 4px;
-  max-width: 30%;
-  text-align: center;
-  box-shadow:inset 0px 1px 0px 0px #a4e271;
-  background:linear-gradient(to bottom, #89c403 5%, #77a809 100%);
-  background-color:#89c403;
-  border-radius:6px;
-  border:1px solid #74b807;
-  display: block;
-  cursor:pointer;
-  color:#ffffff;
-  font-family:Arial;
-  font-size:15px;
-  font-weight:bold;
-  padding:6px 24px;
-  text-decoration:none;
-  text-shadow:0px 1px 0px #528009;
-}
-.myButton:hover {
-  background:linear-gradient(to bottom, #77a809 5%, #89c403 100%);
-  background-color:#77a809;
-}
-.myButton:active {
-  position:relative;
-  top:1px;
-}
 
-.myButton1 {
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 30%;
-  text-align: center;
+
+.myButton.red {
+
   box-shadow:inset 0px 1px 0px 0px #f5978e;
   background:linear-gradient(to bottom, #f24537 5%, #c62d1f 100%);
   background-color:#f24537;
-  border-radius:6px;
   border:1px solid #d02718;
-  display: block;
-  cursor:pointer;
-  color:#ffffff;
-  font-family:Arial;
-  font-size:15px;
-  font-weight:bold;
-  padding:6px 24px;
-  text-decoration:none;
   text-shadow:0px 1px 0px #810e05;
 }
-.myButton1:hover {
+.myButton.red:hover {
   background:linear-gradient(to bottom, #c62d1f 5%, #f24537 100%);
   background-color:#c62d1f;
 }
-.myButton1:active {
+.myButton.red:active {
   position:relative;
   top:1px;
 }
@@ -250,6 +296,7 @@ div.blueTable {
   text-align: center;
   border-radius: 6px;
   color: black;
+  font-family: 'Roboto', sans-serif;
 }
 
 .alert-success {
@@ -281,6 +328,52 @@ Responsive styles
 (the very last module in the CSS, contains all the media queries and it is dealing with the compatibility with mobiles and tablets)
 place all the mobile tables styles below this line
 */
+
+/* mobile first approach = (the website was built initialy for mobiles and it will be adapted for desktop)
+This is the ideal way to built websites because it is much easier to adapt from a small screen and low computing power (mobiles) to a large screen and high computing power (desktops)
+*/
+
+/*iPhone portrait*/
+@media only screen and (min-width: 320px) {
+  body {
+      border: 3px solid purple;
+  }
+}
+
+/*iPhone landscape*/
+@media only screen and (min-width: 480px) {
+  body {
+      border: 3px solid green;
+  }
+}
+
+/*Android landscape*/
+@media only screen and (min-width: 640px) {
+  body {
+      border: 3px solid brown;
+  }
+}
+
+/*iPad potrait*/
+@media only screen and (min-width: 768px) {
+  body {
+      border: 3px solid red;
+  }
+}
+
+/*iPad lanscape / small laptop*/
+@media only screen and (min-width: 1024px) {
+  body {
+      border: 3px solid blue;
+  }
+}
+
+/*large desktop*/
+@media only screen and (min-width: 1600px) {
+  body {
+      border: 3px solid yellow;
+  }
+}
 
 
   
