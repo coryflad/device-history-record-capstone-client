@@ -72,7 +72,6 @@ font-family: 'Sriracha', cursive; */
 
 h1 {
   margin-top: 60px;
-  text-align: center;
   font-family: 'Sriracha', cursive;
 }
 
@@ -84,9 +83,8 @@ h3 {
   font-size: 24px;
 }
 
-h2, h3 {
-  margin-left: auto;
-  margin-right: auto;
+h1, h2, h3 {
+  text-align: center;
 }
 
 div {
@@ -106,8 +104,7 @@ section {
 
 label {
   display: block;
-  width: 95%;
-  max-width: 250px;
+  text-align: center;
   font-family: 'Montserrat', sans-serif;
 }
 
@@ -201,10 +198,9 @@ form {
 
 .defect-log {
   border: 2px black solid;
-  background-color: #EEEEEE;
+  background-color: lightgray;
   margin-top: 40px;
   padding: 0px 10px 40px 10px;
-  background-color: #FFFFFF;
   width: 80%;
 }
 
@@ -354,7 +350,7 @@ This is the ideal way to built websites because it is much easier to adapt from 
   }
 
   label {
-    margin-left: 36px;
+        /* padding-left: calc(50vw + 50px); */
   }
 }
 
@@ -362,7 +358,6 @@ This is the ideal way to built websites because it is much easier to adapt from 
 @media only screen and (min-width: 480px) {
   body {
       border: 3px solid green;
-      /* padding-left: calc(50vw + 50px); */
   }
 }
 
