@@ -10,6 +10,7 @@ Basic rules to write CSS
 CSS reset
 Is a short set of CSS rules that resets the styling of all HTML elements to a consistent baseline so the website will look the same on all browsers
 */
+
 * {
   margin: 0;
   padding: 0;
@@ -59,6 +60,7 @@ Is a short set of CSS rules that resets the styling of all HTML elements to a co
 General styles (General Module, wrapping around the modules below)
 (the styles used everywhere in the page (like the Body) or styles which are used in more than 2 of the modules below (h2, h3, h4, h5, h6, p, a, ul, li))
 */
+
 body {
   border: 3px solid white;
   font-family: 'Roboto', sans-serif;
@@ -68,12 +70,18 @@ body {
 font-family: 'Roboto', sans-serif;
 font-family: 'Sriracha', cursive; */
 
-
-
 h1 {
   margin-top: 60px;
   text-align: center;
   font-family: 'Sriracha', cursive;
+}
+
+h2 {
+  font-size: 40px;
+}
+
+h3 {
+  font-size: 24px;
 }
 
 div {
@@ -82,6 +90,8 @@ div {
 
 p {
   text-align: center;
+  font-size: 14px;
+  margin-top: 4px;
 }
 
 section {
@@ -91,16 +101,14 @@ section {
 
 label {
   display: block;
-  width: 50%;
-  margin-left: auto;
-  margin-right: auto;
+  width: 95%;
+  max-width: 250px;
   font-family: 'Montserrat', sans-serif;
 }
 
-
 input, select {
   padding: 5px 10px;
-  width: 50%;
+  width: 70%;
   display: block;
   margin: 20px auto;
   border-radius: 6px;
@@ -138,8 +146,6 @@ input, select {
   top:1px;
 }
 
-
-
 /* -------------------------------------
 Header styles (Main Module)
 (all the styles inside the < header > or < nav > tags)
@@ -153,7 +159,6 @@ Content styles (Main Module)
 form {
   color: #FFFFFF;
 }
-
 
 .sign-in {
   border: 2px black solid;
@@ -201,9 +206,12 @@ div.blueTable {
   border: 1px solid #1C6EA4;
   margin-top: 10px;
   background-color: #EEEEEE;
-  width: 100%;
+  width: 95%;
+  max-width: 350px;
   text-align: left;
   border-collapse: collapse;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .divTable.blueTable .divTableCell, .divTable.blueTable .divTableHead {
@@ -291,12 +299,12 @@ div.blueTable {
 }
 
 .alert {
-  margin-top: 4px;
+  margin: 4px;
   padding: 4px;
   text-align: center;
   border-radius: 6px;
   color: black;
-  font-family: 'Roboto', sans-serif;
+  
 }
 
 .alert-success {
