@@ -84,6 +84,11 @@ h3 {
   font-size: 24px;
 }
 
+h2, h3 {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 div {
   margin-bottom: 4px;
 }
@@ -108,7 +113,8 @@ label {
 
 input, select {
   padding: 5px 10px;
-  width: 70%;
+  width: 95%;
+  max-width: 250px;
   display: block;
   margin: 20px auto;
   border-radius: 6px;
@@ -119,7 +125,7 @@ input, select {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 4px;
-  max-width: 250px;
+  max-width: 225px;
   text-align: center;
   box-shadow: inset 0px 1px 0px 0px #a4e271;
   background: linear-gradient(to bottom, #89c403 5%, #77a809 100%);
@@ -346,12 +352,17 @@ This is the ideal way to built websites because it is much easier to adapt from 
   body {
       border: 3px solid purple;
   }
+
+  label {
+    margin-left: 36px;
+  }
 }
 
 /*iPhone landscape*/
 @media only screen and (min-width: 480px) {
   body {
       border: 3px solid green;
+      /* padding-left: calc(50vw + 50px); */
   }
 }
 
