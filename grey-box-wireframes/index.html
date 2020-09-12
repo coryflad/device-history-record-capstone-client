@@ -14,160 +14,160 @@
 
 <body>
 
-    <section class="registration">
+    <div class="container">
+        <!-- <section class="registration">
 
-        <div class="alert alert-success">
-            <i class="fas fa-check"></i> <strong>Success</strong> Account Activated Sucessfully!!
-        </div>
-
-        <div class="alert alert-warning">
-            <i class="fas fa-exclamation"></i> <strong>Warning</strong> Password does not meet complexity
-            requirements!!
-        </div>
-
-        <div class="alert alert-failure">
-            <i class="fas fa-times"></i> <strong>Failure</strong> Registration Failed!! Please see System Adminstrator!!
-        </div>
-
-        <form class="registration-form">
-            <h1>DHR Registration</h1>
-            <div class="form-item">
-                <label for="register-email">Email</label>
-                <input type="text" placeholder="email" required="" id="register-email" />
+            <div class="alert alert-success">
+                <i class="fas fa-check"></i> <strong>Success</strong> Account Activated Sucessfully!!
             </div>
-            <div class="form-item">
-                <label for="register-password">Password</label>
-                <input type="text" placeholder="password" required="" id="register-password" />
+    
+            <div class="alert alert-warning">
+                <i class="fas fa-exclamation"></i> <strong>Warning</strong> Password does not meet complexity
+                requirements!!
             </div>
-            <div class="form-item">
-                <label for="register-confirm-password">Confirm Password</label>
-                <input type="text" placeholder="confirm-password" required="" id="register-confirm-password" />
+    
+            <div class="alert alert-failure">
+                <i class="fas fa-times"></i> <strong>Failure</strong> Registration Failed!! Please see System Adminstrator!!
             </div>
-            <div class="form-item">
-                <a href="#" class="myButton">Register</a>
-                <p>Already have an account? <a href="#">Sign In</a></p>
-            </div>
-        </form>
-    </section>
-
-    <section class="sign-in">
-        <div class="alert alert-info">
-            <i class="fas fa-info"></i> <strong>Info</strong> Please enter username and password!
-        </div>
-
-        <div class="alert alert-warning">
-            <i class="fas fa-exclamation"></i> <strong>Warning</strong> Username or password incorrect!!
-        </div>
-
-        <form class="sign-in-form">
-            <h1>DHR Sign-In</h1>
-
-            <div class="form-item">
-                <label for="sign-in-email">Email</label>
-                <input type="text" placeholder="email" required="" id="sign-in-email" />
-            </div>
-            <div class="form-item">
-                <label for="sign-in-password">Password</label>
-                <input type="text" placeholder="password" required="" id="sign-in-password" />
-            </div>
-            <div class="form-item">
-                <a href="#" class="myButton">Sign-In</a>
-                <p>Need to create an account? <a href="#">Register</a></p>
-            </div>
-        </form>
-    </section>
-
-    <section class="landing-page">
-
-        <form class="select-product-form">
-
+    
+            <form class="registration-form">
+                <h1>DHR Registration</h1>
+                <div class="form-item">
+                    <label for="register-email">Email</label>
+                    <input type="text" placeholder="email" required="" id="register-email" />
+                </div>
+                <div class="form-item">
+                    <label for="register-password">Password</label>
+                    <input type="text" placeholder="password" required="" id="register-password" />
+                </div>
+                <div class="form-item">
+                    <label for="register-confirm-password">Confirm Password</label>
+                    <input type="text" placeholder="confirm-password" required="" id="register-confirm-password" />
+                </div>
+                <div class="form-item">
+                    <a href="#" class="myButton">Register</a>
+                    <p>Already have an account? <a href="#">Sign In</a></p>
+                </div>
+            </form>
+        </section>
+    
+        <section class="sign-in">
             <div class="alert alert-info">
-                <i class="fas fa-info"></i> <strong>Info</strong> Please select a device!!
+                <i class="fas fa-info"></i> <strong>Info</strong> Please enter username and password!
             </div>
-            <div class="alert alert-info">
-                <i class="fas fa-info"></i> <strong>Info</strong> Please select a work order!!
+    
+            <div class="alert alert-warning">
+                <i class="fas fa-exclamation"></i> <strong>Warning</strong> Username or password incorrect!!
             </div>
-            <div class="alert alert-info">
-                <i class="fas fa-info"></i> <strong>Info</strong> Please select a serial number!!
+    
+            <form class="sign-in-form">
+                <h1>DHR Sign-In</h1>
+    
+                <div class="form-item">
+                    <label for="sign-in-email">Email</label>
+                    <input type="text" placeholder="email" required="" id="sign-in-email" />
+                </div>
+                <div class="form-item">
+                    <label for="sign-in-password">Password</label>
+                    <input type="text" placeholder="password" required="" id="sign-in-password" />
+                </div>
+                <div class="form-item">
+                    <a href="#" class="myButton">Sign-In</a>
+                    <p>Need to create an account? <a href="#">Register</a></p>
+                </div>
+            </form>
+        </section>
+    
+        <section class="landing-page">
+    
+            <form class="select-product-form">
+    
+                <div class="alert alert-info">
+                    <i class="fas fa-info"></i> <strong>Info</strong> Please select a device!!
+                </div>
+                <div class="alert alert-info">
+                    <i class="fas fa-info"></i> <strong>Info</strong> Please select a work order!!
+                </div>
+                <div class="alert alert-info">
+                    <i class="fas fa-info"></i> <strong>Info</strong> Please select a serial number!!
+                </div>
+    
+                <h1>Good Morning Jimmy Smith!</h1>
+                <div class="form-item">
+                    <label for="device_name">Which device are you testing?:</label>
+                    <select name="device_name" id="device_name">
+                        <option value="select device">select device</option>
+                        <option value="1.5T">1.5T RF Trap</option>
+                        <option value="3.0T">3.0T RF Trap</option>
+                    </select>
+                </div>
+    
+                <div class="form-item">
+                    <label for="wo_no">Which work order?:</label>
+                    <select name="wo_no" id="wo_no">
+                        <option value="select W/O">select W/O</option>
+                        <option value="4710">4710</option>
+                        <option value="4718">4718</option>
+                        <option value="4725">4725</option>
+                        <option value="4731">4731</option>
+                    </select>
+                </div>
+    
+                <div class="form-item">
+                    <label for="device_sn">Which serial number?:</label>
+                    <select name="device_sn" id="device_sn">
+                        <option value="select S/N">select S/N</option>
+                        <option value="20206589">20206589</option>
+                        <option value="20206590">20206590</option>
+                        <option value="20206591">20206591</option>
+                        <option value="20206592">20206592</option>
+                    </select>
+                </div>
+    
+                <div class="form-item">
+                    <a href="#" class="myButton">Create DHR</a>
+                </div>
+    
+            </form>
+        </section> -->
+
+        <section class="dhr-page">
+    
+            <div class="alert alert-warning">
+                <i class="fas fa-exclamation"></i> <strong>Warning</strong> Please enter "equipment description"
+                Identfiers!!
             </div>
-
-            <h1>Good Morning Jimmy Smith!</h1>
-            <div class="form-item">
-                <label for="device_name">Which device are you testing?:</label>
-                <select name="device_name" id="device_name">
-                    <option value="select device">select device</option>
-                    <option value="1.5T">1.5T RF Trap</option>
-                    <option value="3.0T">3.0T RF Trap</option>
-                </select>
+    
+            <div class="alert alert-failure">
+                <i class="fas fa-times"></i> <strong>Failure</strong> "equipment name" is out of calibration!! Contact QA!!
             </div>
-
-            <div class="form-item">
-                <label for="wo_no">Which work order?:</label>
-                <select name="wo_no" id="wo_no">
-                    <option value="select W/O">select W/O</option>
-                    <option value="4710">4710</option>
-                    <option value="4718">4718</option>
-                    <option value="4725">4725</option>
-                    <option value="4731">4731</option>
-                </select>
+    
+            <div class="alert alert-warning">
+                <i class="fas fa-exclamation"></i> <strong>Warning</strong> Are you sure you want to submit DHR with missing
+                test data!!
             </div>
-
-            <div class="form-item">
-                <label for="device_sn">Which serial number?:</label>
-                <select name="device_sn" id="device_sn">
-                    <option value="select S/N">select S/N</option>
-                    <option value="20206589">20206589</option>
-                    <option value="20206590">20206590</option>
-                    <option value="20206591">20206591</option>
-                    <option value="20206592">20206592</option>
-                </select>
+    
+            <div class="alert alert-warning">
+                <i class="fas fa-exclamation"></i> <strong>Warning</strong> Please enter capactior value for Test Location TP1, C2 Value
             </div>
-
-            <div class="form-item">
-                <a href="#" class="myButton">Create DHR</a>
+    
+            <div class="alert alert-warning">
+                <i class="fas fa-exclamation"></i> <strong>Warning</strong> "test location name" fails to meet the test
+                limits!! Are you sure
+                you want to submit DHR??
             </div>
-
-        </form>
-    </section>
-
-    <section class="dhr-page">
-
-        <div class="alert alert-warning">
-            <i class="fas fa-exclamation"></i> <strong>Warning</strong> Please enter "equipment description"
-            Identfiers!!
-        </div>
-
-        <div class="alert alert-failure">
-            <i class="fas fa-times"></i> <strong>Failure</strong> "equipment name" is out of calibration!! Contact QA!!
-        </div>
-
-        <div class="alert alert-warning">
-            <i class="fas fa-exclamation"></i> <strong>Warning</strong> Are you sure you want to submit DHR with missing
-            test data!!
-        </div>
-
-        <div class="alert alert-warning">
-            <i class="fas fa-exclamation"></i> <strong>Warning</strong> Please enter capactior value for Test Location TP1, C2 Value
-        </div>
-
-        <div class="alert alert-warning">
-            <i class="fas fa-exclamation"></i> <strong>Warning</strong> "test location name" fails to meet the test
-            limits!! Are you sure
-            you want to submit DHR??
-        </div>
-
-        <div class="alert alert-success">
-            <i class="fas fa-check"></i> <strong>Success</strong> All test locations meet test limits!!
-        </div>
-
-        <div class="alert alert-failure">
-            <i class="fas fa-times"></i> <strong>Failure</strong> "test location name" fails to meet test limits!!
-        </div>
-
-        <h2>DHR Report</h2>
-        <h3>UUT</h3>
-
-        <div class="divTable blueTable">
+    
+            <div class="alert alert-success">
+                <i class="fas fa-check"></i> <strong>Success</strong> All test locations meet test limits!!
+            </div>
+    
+            <div class="alert alert-failure">
+                <i class="fas fa-times"></i> <strong>Failure</strong> "test location name" fails to meet test limits!!
+            </div>
+    
+            <h2>DHR Report</h2>
+            <!-- <h3>UUT</h3> -->
+        <div class="divTable blueTable media">
             <div class="divTableHeading">
                 <div class="divTableRow">
                     <div class="divTableHead">Description</div>
@@ -207,7 +207,7 @@
             </div>
         </div>
 
-        <h3>Equipment Used</h3>
+        <!-- <h3>Equipment Used</h3> -->
         <div class="divTable blueTable">
             <div class="divTableHeading">
                 <div class="divTableRow">
@@ -240,7 +240,7 @@
             </div>
         </div>
 
-        <h3>Test Data</h3>
+        <!-- <h3>Test Data</h3> -->
         <div class="divTable blueTable">
             <div class="divTableHeading">
                 <div class="divTableRow">
@@ -269,7 +269,7 @@
             </div>
         </div>
 
-        <h3>Test Limits</h3>
+        <!-- <h3>Test Limits</h3> -->
         <div class="divTable blueTable">
             <div class="divTableHeading">
                 <div class="divTableRow">
@@ -285,8 +285,6 @@
             </div>
         </div>
 
-        <a href="#" class="myButton">Submit for QA Inspect</a>
-
         <div class="divTable blueTable">
             <div class="divTableHeading">
                 <div class="divTableRow">
@@ -300,9 +298,11 @@
             </div>
         </div>
 
-        <a href="#" class="myButton">QA Approval</a>
+        <!-- <a href="#" class="myButton">Submit for QA Inspect</a> -->
 
-        <a href="#" class="myButton red">QA Reject</a>
+        <!-- <a href="#" class="myButton">QA Approval</a>
+    
+            <a href="#" class="myButton red">QA Reject</a> -->
 
         <div class="divTable blueTable">
             <div class="divTableHeading">
@@ -330,53 +330,56 @@
             </div>
         </div>
 
-    </section>
+        </section>
 
-    <section class="defect-log">
-        <h2>Defect Log</h2>
-
-        <h3>S/N: 24106589</h3>
-        <h3>NCM: 20-176</h3>
-
-        <div class="divTable blueTable">
-            <div class="divTableHeading">
-                <div class="divTableRow">
-                    <div class="divTableHead">User Entry</div>
-                    <div class="divTableHead">NCM<br>resolved? (Y/N)</div>
-                    <div class="divTableHead">Entered By</div>
-                    <div class="divTableHead">Date</div>
-
+        <!-- <section class="defect-log">
+            <h2>Defect Log</h2>
+    
+            <h3>S/N: 24106589</h3>
+            <h3>NCM: 20-176</h3>
+    
+            <div class="divTable blueTable">
+                <div class="divTableHeading">
+                    <div class="divTableRow">
+                        <div class="divTableHead">User Entry</div>
+                        <div class="divTableHead">NCM<br>resolved? (Y/N)</div>
+                        <div class="divTableHead">Entered By</div>
+                        <div class="divTableHead">Date</div>
+    
+                    </div>
+                </div>
+                <div class="divTableBody">
+                    <div class="divTableRow">
+                        <div class="divTableCell">TP#1 fails to meet dB limit</div>
+                        <div class="divTableCell">No</div>
+                        <div class="divTableCell">Sally Day</div>
+                        <div class="divTableCell">2020-08-27</div>
+    
+                    </div>
+                    <div class="divTableRow">
+                        <div class="divTableCell">Found open condition at location C2<br>Add solder to C2 to remove open
+                            condition<br>Performed retest</div>
+                        <div class="divTableCell">No</div>
+                        <div class="divTableCell">Jimmy Smith</div>
+                        <div class="divTableCell">2020-08-27</div>
+    
+                    </div>
+                    <div class="divTableRow">
+                        <div class="divTableCell">Approved solder rework at location C2<br>confirmed passing test results
+                            for TP#1</div>
+                        <div class="divTableCell">Yes</div>
+                        <div class="divTableCell">Sally Day</div>
+                        <div class="divTableCell">2020-08-27</div>
+                    </div>
                 </div>
             </div>
-            <div class="divTableBody">
-                <div class="divTableRow">
-                    <div class="divTableCell">TP#1 fails to meet dB limit</div>
-                    <div class="divTableCell">No</div>
-                    <div class="divTableCell">Sally Day</div>
-                    <div class="divTableCell">2020-08-27</div>
+    
+            <a href="#" class="myButton">Submit</a>
+    
+        </section> -->
+    </div>
 
-                </div>
-                <div class="divTableRow">
-                    <div class="divTableCell">Found open condition at location C2<br>Add solder to C2 to remove open
-                        condition<br>Performed retest</div>
-                    <div class="divTableCell">No</div>
-                    <div class="divTableCell">Jimmy Smith</div>
-                    <div class="divTableCell">2020-08-27</div>
 
-                </div>
-                <div class="divTableRow">
-                    <div class="divTableCell">Approved solder rework at location C2<br>confirmed passing test results
-                        for TP#1</div>
-                    <div class="divTableCell">Yes</div>
-                    <div class="divTableCell">Sally Day</div>
-                    <div class="divTableCell">2020-08-27</div>
-                </div>
-            </div>
-        </div>
-
-        <a href="#" class="myButton">Submit</a>
-
-    </section>
 
 </body>
 

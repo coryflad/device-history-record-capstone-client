@@ -159,6 +159,11 @@ Content styles (Main Module)
 (all the styles inside the < sections > or < aside > tags)
 */
 
+.container {
+  max-width: 1080px;
+  margin: 0 auto;
+}
+
 form {
   color: #FFFFFF;
 }
@@ -214,6 +219,10 @@ div.blueTable {
   border-collapse: collapse;
   margin-left: auto;
   margin-right: auto;
+}
+
+.divTable.blueTable:nth-child(odd) {
+  clear: left;
 }
 
 .divTable.blueTable .divTableCell, .divTable.blueTable .divTableHead {
@@ -349,9 +358,6 @@ This is the ideal way to built websites because it is much easier to adapt from 
       border: 3px solid purple;
   }
 
-  label {
-        /* padding-left: calc(50vw + 50px); */
-  }
 }
 
 /*iPhone landscape*/
@@ -379,6 +385,13 @@ This is the ideal way to built websites because it is much easier to adapt from 
 @media only screen and (min-width: 1024px) {
   body {
       border: 3px solid blue;
+  }
+
+  div.blueTable {
+    margin: 0 1.5em 1.5em 0;
+    width: calc(50% - 1.5em);
+    padding: 1.5em;
+    float: left;
   }
 }
 
