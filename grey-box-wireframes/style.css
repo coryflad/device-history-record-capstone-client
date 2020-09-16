@@ -150,6 +150,12 @@ input, select {
   top:1px;
 }
 
+.buttonWrapper {
+  width: 100%;
+  text-align: center;
+  display: block;
+}
+
 /* -------------------------------------
 Header styles (Main Module)
 (all the styles inside the < header > or < nav > tags)
