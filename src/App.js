@@ -1,9 +1,9 @@
 import React from 'react'
-import LandingPage from './LandingPage/LandingPage'
-import Registration from './Registration/Registration'
-import SignIn from './SignIn/SignIn'
-import DhrReport from './DhrReport/DhrReport'
-import DefectLog from './DefectLog/DefectLog'
+import LandingPage from './LandingPage'
+import Registration from './Registration'
+import SignIn from './SignIn'
+import DhrReport from './DhrReport'
+import DefectLog from './DefectLog'
 
 
 function App() {
