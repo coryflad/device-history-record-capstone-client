@@ -7,17 +7,15 @@ function Registration() {
 
             <div className="alert alert-success">
                 <i className="fas fa-check"></i> <strong>Success</strong> Account Activated Sucessfully!!
-</div>
+            </div>
 
             <div className="alert alert-warning">
-                <i className="fas fa-exclamation"></i> <strong>Warning</strong> Password does not meet complexity
-requirements!!
-</div>
+                <i className="fas fa-exclamation"></i> <strong>Warning</strong> Password does not meet complexity requirements!!
+            </div>
 
             <div className="alert alert-failure">
-                <i className="fas fa-times"></i> <strong>Failure</strong> Registration Failed!! Please see System
-Adminstrator!!
-</div>
+                <i className="fas fa-times"></i> <strong>Failure</strong> Registration Failed!! Please see System Adminstrator!!
+            </div>
 
             <form className="registration-form">
                 <h1>DHR Registration</h1>
