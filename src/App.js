@@ -1,7 +1,7 @@
 import React from 'react'
 import { Route } from 'react-router-dom'
 
-import LandingPage from './LandingPage'
+import LandingPage from './LandingPage/LandingPage'
 import Registration from './Registration'
 import SignIn from './SignIn'
 import DhrReport from './DhrReport'
