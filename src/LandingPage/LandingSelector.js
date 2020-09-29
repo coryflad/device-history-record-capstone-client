@@ -12,21 +12,19 @@ class LandingSelector extends React.Component {
     }
 
     render() {
-        const options = this
-            .props
-            .countries
+        const devices = this.props.countries
             .map(
                 (country, i) => <option value={country.name} key={i}>{country.name}</option>
             )
         return (
-            <div className='country_selector'>
-                    <label htmlFor='country'>Select a device for testing:</label>
+            <div className='landing_selector'>
+                    <label htmlFor='device_name'>Select a device for testing:</label>
                     <select
-                        id='country'
-                        name='country'
+                        id='device_name'
+                        name='device_name'
                         onChange={e => this.changeSelection(e.target.value)}>
                         <option value='None'>Select one...</option>
-                        {options}
+                        {devices}
                     </select>
 
                     <label htmlFor='device_sn'>Select a serial number:</label>
