@@ -6,7 +6,8 @@ class LandingPage extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            params: [],
+            device_sn: [],
+            device_name: [],
             countries: [],
             selected: null
         }
@@ -56,7 +57,7 @@ class LandingPage extends React.Component {
         return (
             <section className="landing-page">
                 {device}
-                <form className="select-product-form">
+                <form className="select-device-form">
 
                     <h1>Good Morning Jimmy Smith!</h1>
 
