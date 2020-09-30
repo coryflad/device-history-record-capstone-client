@@ -6,7 +6,7 @@ class LandingPage extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            device_sn: [],
+            device_sn: {},
             device_name: [],
             countries: [],
             selected: null
