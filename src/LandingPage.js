@@ -1,16 +1,13 @@
-import React from 'react';
+import React from 'react'
 
 
 class LandingPage extends React.Component {
     constructor(props) {
-        super(props);
+        super(props)
         this.state = {
-            search: '',
-            books: [],
-            booksFound: [],
             params: {},
             formValidationError: ''
-        };
+        }
     }
 
     //get the imput from the user
@@ -36,21 +33,21 @@ class LandingPage extends React.Component {
 
         // 'select device' 'select S/N' 'select W/O' submitted form without anything selected.
 
-        if (device_name == 'select device') {
+        if (device_name === 'select device') {
             console.log('select device')
             this.setState({
                 formValidationError: 'Please select a device!!'
             })
         }
 
-        else if (device_sn == 'select S/N') {
+        else if (device_sn === 'select S/N') {
             console.log('select S/N')
             this.setState({
                 formValidationError: 'Please select a serial number!!'
             })
         }
 
-        else if (wo_no == 'select W/O') {
+        else if (wo_no === 'select W/O') {
             console.log('select W/O')
             this.setState({
                 formValidationError: 'Please select a work order!!'
@@ -68,7 +65,7 @@ class LandingPage extends React.Component {
             console.log(this.state.params)
 
             //get the google books api url
-            const searchURL = 'https://www.googleapis.com/books/v1/volumes'
+            // const searchURL = 'https://www.googleapis.com/books/v1/volumes'
 
             // //format the queryString paramters into an object
             // const queryString = this.formatQueryParams(data)
@@ -169,14 +166,13 @@ class LandingPage extends React.Component {
             </div>
         }
         return (
-
-
             <section className="landing-page">
 
                 <form className="select-product-form" onSubmit={this.handleSearch}>
                     {showErrorOutput}
 
                     <h1>Good Morning Jimmy Smith!</h1>
+                    
                     <div className="form-item">
                         <label htmlFor="device_name">Which device are you testing?:</label>
                         <select name="device_name" id="device_name">

@@ -32,8 +32,8 @@ function Registration() {
                     <input type="text" placeholder="confirm-password" required="" id="register-confirm-password" />
                 </div>
                 <div className="form-item">
-                    <a href="#" className="myButton">Register</a>
-                    <p>Already have an account? <a href="#">Sign In</a></p>
+                    <button type='submit' className="myButton">Register</button>
+                    <p>Already have an account? <a href="/">Sign In</a></p>
                 </div>
             </form>
         </section>
