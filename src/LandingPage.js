@@ -155,7 +155,6 @@ class LandingPage extends React.Component {
 
     }
 
-
     render() {
         let showErrorOutput = ''
         if (this.state.formValidationError) {
@@ -165,6 +164,7 @@ class LandingPage extends React.Component {
                 {this.state.formValidationError}
             </div>
         }
+        
         return (
             <section className="landing-page">
 

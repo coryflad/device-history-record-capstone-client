@@ -161,7 +161,7 @@ function DhrReport() {
                         <div className="divTableCell">Jimmy Smith 2020-08-27</div>
                     </div>
                 </div>
-                <a href="#" className="myButton">Submit for QA Inspect</a>
+                <a href="/" className="myButton">Submit for QA Inspect</a>
             </div>
 
             <div className="divTable blueTable">
@@ -176,9 +176,9 @@ function DhrReport() {
                     </div>
                 </div>
 
-                <a href="#" className="myButton">QA Approval</a>
+                <a href="/" className="myButton">QA Approval</a>
 
-                <a href="#" className="myButton red">QA Reject</a>
+                <a href="/" className="myButton red">QA Reject</a>
             </div>
 
             <div className="divTable blueTable completed">
