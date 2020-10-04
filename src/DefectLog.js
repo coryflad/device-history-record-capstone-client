@@ -29,7 +29,9 @@ class DefectLog extends React.Component {
 
         const { user_entry, sign_in_email, qa_approval } = data
 
-        console.log(user_entry, sign_in_email, qa_approval)
+        console.log(user_entry, qa_approval, sign_in_email)
+
+        // 'user_entry', 'qa_approval', 'sign_in_email' submitted with empty strings
 
         if (user_entry === '') {
             console.log('empty user entry input')
@@ -177,7 +179,7 @@ class DefectLog extends React.Component {
                     <div className='divTableBody'>
                         <div className='divTableRow'>
                             <div className='form-item'>
-                                <label htmlFor='user_entry'>Rework Details</label>
+                                <label htmlFor='user_entry'>Rework</label>
                                 <input name='user_entry' type='text' placeholder='enter details here' required='' id='user_entry' />
                             </div>
 
