@@ -216,6 +216,10 @@ form {
   width: 80%;
 }
 
+.defect-log-text {
+  color: black;
+}
+
 div.blueTable {
   border: 1px solid #AAAAAA;
   margin-top: 10px;
@@ -349,7 +353,7 @@ div.blueTable {
 }
 
 .alert-info {
-  background-color: lightgray;
+  background-color: lightyellow;
 }
 
 .completed {
