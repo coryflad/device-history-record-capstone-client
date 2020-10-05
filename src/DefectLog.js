@@ -40,17 +40,17 @@ class DefectLog extends React.Component {
             })
         }
 
+                else if (qa_approval === 'None') {
+            console.log('NCM not selected')
+            this.setState({
+                formValidationError: 'Please select if NCM is resolved!!'
+            })
+        }
+
         else if (sign_in_email === '') {
             console.log('empty "Entered By" input')
             this.setState({
                 formValidationError: 'Please enter email for signature!!'
-            })
-        }
-
-        else if (qa_approval === '') {
-            console.log('NCM not selected')
-            this.setState({
-                formValidationError: 'Please select if NCM is resolved!!'
             })
         }
 
@@ -152,11 +152,7 @@ class DefectLog extends React.Component {
             //         })
             // })
         }
-
-
-
     }
-
 
     render() {
         let showErrorOutput = ''
@@ -170,41 +166,12 @@ class DefectLog extends React.Component {
         return (
             <section className='defect-log clearfix'>
                 {showErrorOutput}
-                {/* <form className='defect-log-text' onSubmit={this.handleSearch}>
-                    {showErrorOutput}
-                    <h2>Defect Log</h2>
 
-                    <h3>S/N: 24106589</h3>
-                    <h3>NCM: 20-176</h3>
+                <h2>Defect Log</h2>
 
-                    <div className='divTableBody'>
-                        <div className='divTableRow'>
-                            <div className='form-item'>
-                                <label htmlFor='user_entry'>Rework</label>
-                                <input name='user_entry' type='text' placeholder='enter details here' required='' id='user_entry' />
-                            </div>
+                <h3>S/N: 24106589</h3>
+                <h3>NCM: 20-176</h3>
 
-                            <div className='form-item'>
-                                <label htmlFor='qa_approval'>NCM Resolved?</label>
-                                <select name='qa_approval' id='qa_approval'>
-                                    <option defaultValue='n/a'>N/A</option>
-                                    <option defaultValue='yes'>Yes</option>
-                                    <option defaultValue='no'>No</option>
-                                </select>
-                            </div>
-
-                            <div className='form-item'>
-                                <label htmlFor='sign_in_email'>Entered By</label>
-                                <input name='sign_in_email' type='text' placeholder='email' required='' id='sign_in_email' />
-                            </div>
-
-                            <div className='buttonWrapper clearfix'>
-                                <button type='submit' className='myButton'>Submit</button>
-                            </div>
-
-                        </div>
-                    </div>
-                </form> */}
                 <form className='defect-log-text' onSubmit={this.handleSearch}>
                     <div className='divTable blueTable clearfix fullWidth'>
 
@@ -220,36 +187,21 @@ class DefectLog extends React.Component {
                         </div>
 
                         <div className='divTableBody'>
+
                             <div className='divTableRow'>
                                 <div className='divTableCell'>TP#1 fails to meet dB limit</div>
                                 <div className='divTableCell'>No</div>
                                 <div className='divTableCell'>Sally Day</div>
                                 <div className='divTableCell'>2020-08-27</div>
                             </div>
-                            <div className='divTableRow'>
-                                <div className='divTableCell'>Found open condition at location C2<br />Add solder to C2 to remove open
-                                condition<br />Performed retest</div>
-                                <div className='divTableCell'>No</div>
-                                <div className='divTableCell'>Jimmy Smith</div>
-                                <div className='divTableCell'>2020-08-27</div>
-
-                            </div>
-                            <div className='divTableRow'>
-                                <div className='divTableCell'>Approved solder rework at location C2<br />confirmed passing test
-                                                        results
-                    for TP#1</div>
-                                <div className='divTableCell'>Yes</div>
-                                <div className='divTableCell'>Sally Day</div>
-                                <div className='divTableCell'>2020-08-27</div>
-                            </div>
 
                             <div className='divTableRow'>
-
                                 <div className='divTableCell'>
                                     <input name='user_entry' type='text' placeholder='enter details here' required='' id='user_entry' />
                                 </div>
                                 <div className='divTableCell'>
                                     <select name='qa_approval' id='qa_approval'>
+                                        <option value='None'>Select one...</option>
                                         <option defaultValue='n/a'>N/A</option>
                                         <option defaultValue='yes'>Yes</option>
                                         <option defaultValue='no'>No</option>
@@ -267,7 +219,6 @@ class DefectLog extends React.Component {
                             </div>
                         </div>
                     </div>
-
                 </form>
 
 
