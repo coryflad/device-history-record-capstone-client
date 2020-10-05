@@ -169,7 +169,8 @@ class DefectLog extends React.Component {
         }
         return (
             <section className='defect-log clearfix'>
-                <form className='defect-log-text' onSubmit={this.handleSearch}>
+                {showErrorOutput}
+                {/* <form className='defect-log-text' onSubmit={this.handleSearch}>
                     {showErrorOutput}
                     <h2>Defect Log</h2>
 
@@ -197,9 +198,14 @@ class DefectLog extends React.Component {
                                 <input name='sign_in_email' type='text' placeholder='email' required='' id='sign_in_email' />
                             </div>
 
+                            <div className='buttonWrapper clearfix'>
+                                <button type='submit' className='myButton'>Submit</button>
+                            </div>
+
                         </div>
                     </div>
-
+                </form> */}
+                <form className='defect-log-text' onSubmit={this.handleSearch}>
                     <div className='divTable blueTable clearfix fullWidth'>
 
                         <div className='divTableHeading'>
@@ -219,7 +225,6 @@ class DefectLog extends React.Component {
                                 <div className='divTableCell'>No</div>
                                 <div className='divTableCell'>Sally Day</div>
                                 <div className='divTableCell'>2020-08-27</div>
-
                             </div>
                             <div className='divTableRow'>
                                 <div className='divTableCell'>Found open condition at location C2<br />Add solder to C2 to remove open
@@ -237,11 +242,32 @@ class DefectLog extends React.Component {
                                 <div className='divTableCell'>Sally Day</div>
                                 <div className='divTableCell'>2020-08-27</div>
                             </div>
+
+                            <div className='divTableRow'>
+
+                                <div className='divTableCell'>
+                                    <input name='user_entry' type='text' placeholder='enter details here' required='' id='user_entry' />
+                                </div>
+                                <div className='divTableCell'>
+                                    <select name='qa_approval' id='qa_approval'>
+                                        <option defaultValue='n/a'>N/A</option>
+                                        <option defaultValue='yes'>Yes</option>
+                                        <option defaultValue='no'>No</option>
+                                    </select>
+                                </div>
+                                <div className='divTableCell'>
+                                    <input name='sign_in_email' type='text' placeholder='email' required='' id='sign_in_email' />
+                                </div>
+                                <div className='divTableCell'>
+                                    <div className='buttonWrapper clearfix'>
+                                        <button type='submit' className='myButton'>Submit</button>
+                                    </div>
+                                </div>
+
+                            </div>
                         </div>
                     </div>
-                    <div className='buttonWrapper clearfix'>
-                        <button type='submit' className='myButton'>Submit</button>
-                    </div>
+
                 </form>
 
 
