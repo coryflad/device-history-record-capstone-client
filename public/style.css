@@ -113,7 +113,7 @@ input, select {
   width: 95%;
   max-width: 250px;
   display: block;
-  margin: 20px auto;
+  margin: 5px auto;
   border-radius: 6px;
   border: 1px solid #CCC;
 }
@@ -169,10 +169,6 @@ Content styles (Main Module)
 .container {
   max-width: 1080px;
   margin: 0 auto;
-}
-
-form {
-  color: #FFFFFF;
 }
 
 .sign-in {

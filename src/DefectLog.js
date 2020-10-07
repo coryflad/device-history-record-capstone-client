@@ -40,7 +40,7 @@ class DefectLog extends React.Component {
             })
         }
 
-                else if (qa_approval === 'None') {
+        else if (qa_approval === 'None') {
             console.log('NCM not selected')
             this.setState({
                 formValidationError: 'Please select if NCM is resolved!!'
