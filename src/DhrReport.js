@@ -30,7 +30,7 @@ class DhrReport extends React.Component {
 
         const { test_location, db_user_value_entry, freq_value, cap_value1, cap_value2 } = testData
 
-        console.log(test_location, db_user_value_entry, freq_value, cap_value1, cap_value2)
+        // console.log(test_location, db_user_value_entry, freq_value, cap_value1, cap_value2)
 
         if (test_location === '') {
             console.log('empty test location input')
