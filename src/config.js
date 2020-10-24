@@ -1,4 +1,4 @@
 export default {
-    API_ENDPOINT: "http://localhost8000.com/api",
+    API_ENDPOINT: "http://localhost:8000/api",
     TOKEN_KEY: 'dhr-capstone',
   }

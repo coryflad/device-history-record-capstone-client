@@ -50,7 +50,7 @@ class Registration extends React.Component {
     handleSubmit = (event) => {
         event.preventDefault();
         const { userName, password, repeatPassword } = event.target;
-        // console.log('username:', userName.value, 'password:', password.value);
+        console.log('username:', userName.value, 'password:', password.value);
         this.setState({ error: null })
         AuthApiService.postUser({
             user_name: userName.value,
