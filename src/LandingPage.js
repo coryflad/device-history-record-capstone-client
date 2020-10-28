@@ -1,4 +1,5 @@
 import React from 'react'
+import TokenService from './services/TokenServices'
 
 
 class LandingPage extends React.Component {
@@ -13,6 +14,11 @@ class LandingPage extends React.Component {
     //get the imput from the user
     handleSearch = (e) => {
         e.preventDefault()
+
+        let currentUserId = TokenService.getUserId()
+        let currentUserToken = TokenService.getAuthToken()
+
+        console.log(currentUserId, currentUserToken)
 
         //create an object to store the search filters
         const data = {}

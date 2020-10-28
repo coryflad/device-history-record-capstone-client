@@ -35,7 +35,7 @@ class SignIn extends React.Component {
         const { userName, password } = event.target
         console.log('username:', userName.value, "password:", password.value);
         AuthApiService.postLogin({
-            userName: userName.value,
+            user_name: userName.value,
             password: password.value,
         })
 
