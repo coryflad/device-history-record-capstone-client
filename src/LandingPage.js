@@ -11,14 +11,21 @@ class LandingPage extends React.Component {
         }
     }
 
+    componentDidMount() {
+        console.log('Stateful component Appjs successfully mounted.');
+        let currentUserId = TokenService.getUserId()
+        let currentUserToken = TokenService.getAuthToken()
+        console.log(currentUserId, currentUserToken)
+        console.log(TokenService.hasAuthToken())
+
+        if (!TokenService.hasAuthToken()){
+            window.location = '/'
+        }
+    }
+
     //get the imput from the user
     handleSearch = (e) => {
         e.preventDefault()
-
-        let currentUserId = TokenService.getUserId()
-        let currentUserToken = TokenService.getAuthToken()
-
-        console.log(currentUserId, currentUserToken)
 
         //create an object to store the search filters
         const data = {}
@@ -158,6 +165,8 @@ class LandingPage extends React.Component {
             //     })
             // })
         }
+
+
 
     }
 

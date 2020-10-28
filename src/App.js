@@ -6,11 +6,14 @@ import Registration from './Registration'
 import SignIn from './SignIn'
 import DhrReport from './DhrReport'
 import DefectLog from './DefectLog'
+import Nav from './Nav'
 
 
 function App() {
     return (
         <div className="App">
+
+            <Nav />
          
             <Route path='/defect-log' component={DefectLog} />
 
