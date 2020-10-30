@@ -118,6 +118,10 @@ input, select {
   border: 1px solid #CCC;
 }
 
+li {
+  list-style-type: none;
+}
+
 .myButton, button {
   margin-left: auto;
   margin-right: auto;

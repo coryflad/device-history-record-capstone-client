@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import TokenService from './services/TokenServices'
-import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom' 
 
 
 class navbar extends Component {
@@ -12,7 +12,7 @@ class navbar extends Component {
             console.log(id)
         }
 
-        // window.location='/'
+        window.location='/'
     }
 
     render() {
@@ -20,12 +20,18 @@ class navbar extends Component {
 
         return (
             <header>
-                <div>Logo</div>
+                <h4>eDHR</h4>
                 {TokenService.hasAuthToken() ?
-                    <nav className="top-right">
+                    <nav className="nav">
                         <ul className='link'>
                             <li>
-                                <Link to="/user/dash">Home {TokenService.getUserId()}</Link>
+                                <Link to="/defect-log">Defect Log</Link>
+                            </li>
+                            <li>
+                                <Link to="/dhr-report">DHR Report</Link>
+                            </li>
+                            <li>
+                                <Link to="/landing">Landing Page</Link>
                             </li>
                             <li>
                                 <Link to="/" onClick={this.logOutClick}>Log Out</Link>
@@ -38,4 +44,4 @@ class navbar extends Component {
     }
 }
 
-export default navbar;
+export default navbar 

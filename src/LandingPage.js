@@ -1,4 +1,6 @@
 import React from 'react'
+
+import Nav from './Nav'
 import TokenService from './services/TokenServices'
 
 
@@ -12,7 +14,6 @@ class LandingPage extends React.Component {
     }
 
     componentDidMount() {
-        console.log('Stateful component Appjs successfully mounted.');
         let currentUserId = TokenService.getUserId()
         let currentUserToken = TokenService.getAuthToken()
         console.log(currentUserId, currentUserToken)
@@ -184,6 +185,7 @@ class LandingPage extends React.Component {
             <section className="landing-page">
 
                 <form className="select-product-form" onSubmit={this.handleSearch}>
+           
                     {showErrorOutput}
 
                     <h1>Good Morning Jimmy Smith!</h1>

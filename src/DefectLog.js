@@ -1,4 +1,5 @@
 import React from 'react'
+import TokenService from './services/TokenServices'
 
 
 class DefectLog extends React.Component {
@@ -7,6 +8,17 @@ class DefectLog extends React.Component {
         this.state = {
             params: {},
             formValidationError: ''
+        }
+    }
+
+    componentDidMount() {
+        let currentUserId = TokenService.getUserId()
+        let currentUserToken = TokenService.getAuthToken()
+        console.log(currentUserId, currentUserToken)
+        console.log(TokenService.hasAuthToken())
+
+        if (!TokenService.hasAuthToken()){
+            window.location = '/'
         }
     }
 
