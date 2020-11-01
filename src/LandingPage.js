@@ -1,5 +1,6 @@
 import React from 'react'
 
+import config from './config'
 import Nav from './Nav'
 import TokenService from './services/TokenServices'
 
@@ -19,7 +20,7 @@ class LandingPage extends React.Component {
         console.log(currentUserId, currentUserToken)
         console.log(TokenService.hasAuthToken())
 
-        if (!TokenService.hasAuthToken()){
+        if (!TokenService.hasAuthToken()) {
             window.location = '/'
         }
     }
@@ -78,93 +79,43 @@ class LandingPage extends React.Component {
             //check if the state is populated with the search params data
             console.log(this.state.params)
 
-            //get the google books api url
-            // const searchURL = 'https://www.googleapis.com/books/v1/volumes'
+            // create payload and send it across we left of here!!!!
 
-            // //format the queryString paramters into an object
-            // const queryString = this.formatQueryParams(data)
+            const payload = {
+                device_name: data.device_name,
+                wo_no: data.wo_no,
+                device_sn: data.device_sn,
+                currentUserId: TokenService.getUserId()
+            };
 
-            // //sent all the params to the final url
-            // const url = searchURL + '?' + queryString
+            console.log(payload)
 
-            // console.log(url)
+            const url = `${config.API_ENDPOINT}/create-dhr`;
 
-            // //define the API call parameters
-            // const options = {
-            //     method: 'GET',
-            //     header: {
-            //         "Authorization": "",
-            //         "Content-Type": "application/json"
-            //     }
-            // }
+            fetch(url, {
+                method: "POST",
+                body: JSON.stringify(payload),
+                headers: {
+                    "content-type": "application/json",
+                },
+            })
+                .then((res) => {
+                    if (!res.ok) {
+                        return res.json().then((error) => {
+                            throw error;
+                        });
+                    }
+                    return res.json();
+                })
+                .then((data) => {
+                    // this.props.updateNote(data);
+                    alert('Post added!');
+                    window.location = '/dhr-report'
+                })
 
-            // //using the url and paramters above make the api call
-            // fetch(url, options)
-
-            //     // if the api returns data ...
-            //     .then(res => {
-            //         if (!res.ok) {
-            //             throw new Error('Something went wrong, please try again later.')
-            //         }
-
-            //         // ... convert it to json
-            //         return res.json()
-            //     })
-
-            //     // use the json api output
-            //     .then(data => {
-
-            //         //check if there is meaningfull data
-            //         console.log(data);
-
-            //         // check if there are no results
-            //         if (data.totalItems === 0) {
-            //             throw new Error('No books found')
-            //         }
-
-            //         // create and object with each one of the results
-            //         const aBooks = data.items.map(book => {
-
-            //             // get the title, authors, description, imageLinks, previewLink from "volumeInfo"
-            //             const { title, authors, description, imageLinks, previewLink } = book.volumeInfo
-
-            //             // get the saleability, retailPrice from "saleInfo"
-            //             const { saleability, retailPrice } = book.saleInfo
-
-
-            //             let validatedOutput = {
-            //                 title: this.checkString(title),
-            //                 author: this.checkString(authors),
-            //                 description: this.checkString(description),
-            //                 previewLink: this.checkURL(previewLink),
-            //                 thumbnail_URL: this.checkEmptyImage(imageLinks.thumbnail),
-            //                 saleability: this.checkInteger(saleability),
-            //                 price: this.checkInteger(retailPrice),
-            //             }
-
-            //             //check if the data validation works
-            //             console.log(validatedOutput);
-
-            //             // fix the inconsitent results and return them
-            //             return validatedOutput;
-            //         })
-
-            //         //check if the validated data is structured in a new array objects
-            //         console.log(aBooks);
-
-            //         //send all the results to the state
-            //         this.setState({
-            //             books: aBooks,
-            //             error: null
-            //         })
-            //     })
-
-            //catch connection errors
-            // .catch(err => {
-            //     this.setState({
-            //         error: err.message
-            //     })
-            // })
+                .catch((error) => {
+                    this.setState({ appError: error });
+                });
         }
 
 
@@ -180,16 +131,16 @@ class LandingPage extends React.Component {
                 {this.state.formValidationError}
             </div>
         }
-        
+
         return (
             <section className="landing-page">
 
                 <form className="select-product-form" onSubmit={this.handleSearch}>
-           
+
                     {showErrorOutput}
 
                     <h1>Good Morning Jimmy Smith!</h1>
-                    
+
                     <div className="form-item">
                         <label htmlFor="device_name">Which device are you testing?:</label>
                         <select name="device_name" id="device_name">
