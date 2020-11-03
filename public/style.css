@@ -187,6 +187,11 @@ Content styles (Main Module)
   background: -webkit-linear-gradient(top, #5592bb 0%, #327cad 66%, #1C6EA4 100%);
 }
 
+.error {
+  padding: 10px;
+  background: -webkit-linear-gradient(top, #5592bb 0%, #327cad 66%, #1C6EA4 100%);
+}
+
 .dhr-page {
   border: 2px black solid;
   background-color: lightgray;
