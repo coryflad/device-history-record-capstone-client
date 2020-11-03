@@ -66,7 +66,6 @@ class Registration extends React.Component {
                 TokenService.saveUserId(response.id)
                 window.location = '/landing'
             })
-
             .catch(res => {
                 this.setState({ error: res.error })
             })

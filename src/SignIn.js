@@ -1,9 +1,9 @@
 import React from 'react'
 
-import ValidationError from './ValidationError'
+
 import AuthApiService from './services/AuthApiService' 
 import TokenService from './services/TokenServices' 
-import Nav from './Nav'
+
 
 
 class SignIn extends React.Component {
