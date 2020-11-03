@@ -1,7 +1,6 @@
 import React from 'react'
 
 import config from './config'
-import Nav from './Nav'
 import TokenService from './services/TokenServices'
 
 
