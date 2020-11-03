@@ -24,7 +24,7 @@ class Error extends React.Component {
                     </div>
                     :
                     <div>
-                        <h6>Wrong path, lets go login</h6>
+                        <h6>Please login!</h6>
                         <li>
                             <Link to="/">Back To Login</Link>
                         </li>
