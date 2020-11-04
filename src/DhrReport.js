@@ -18,7 +18,7 @@ class DhrReport extends React.Component {
         console.log(currentUserId, currentUserToken)
         console.log(TokenService.hasAuthToken())
 
-        if (!TokenService.hasAuthToken()){
+        if (!TokenService.hasAuthToken()) {
             window.location = '/'
         }
     }
@@ -390,24 +390,32 @@ class DhrReport extends React.Component {
 
                     <div className='divTableBody'>
                         <div className='divTableRow'>
-                            <div className='divTableCell'>Assembly No.</div>
-                            <div className='divTableCell'>3.0T-124801</div>
+                            <div className='divTableCell'>Assembly Name / No.</div>
+                            <select name="device_name" id="device_name">
+                                <option defaultValue="select device">select device</option>
+                                <option defaultValue="1.5T">1.5T RF Trap</option>
+                                <option defaultValue="3.0T">3.0T RF Trap</option>
+                            </select>
                         </div>
                         <div className='divTableRow'>
-                            <div className='divTableCell'>Assembly Name</div>
-                            <div className='divTableCell'>3.0T RF Trap</div>
+                            <div className='divTableCell'>Work Order No.</div>
+                            <select name="device_name" id="device_name">
+                                <option defaultValue="select device">select work order</option>
+                                <option defaultValue="1.5T">1.5T RF Trap</option>
+                                <option defaultValue="3.0T">3.0T RF Trap</option>
+                            </select>
+                        </div>
+                        <div className='divTableRow'>
+                            <div className='divTableCell'>Device S/N</div>
+                            <select name="device_sn" id="device_sn">
+                                <option defaultValue="select serial number">select S/N</option>
+                                <option defaultValue="1.5T">1.5T RF Trap</option>
+                                <option defaultValue="3.0T">3.0T RF Trap</option>
+                            </select>
                         </div>
                         <div className='divTableRow'>
                             <div className='divTableCell'>Applicable DMR</div>
                             <div className='divTableCell'>3.0T-124DMR</div>
-                        </div>
-                        <div className='divTableRow'>
-                            <div className='divTableCell'>Device S/N</div>
-                            <div className='divTableCell'>24106589</div>
-                        </div>
-                        <div className='divTableRow'>
-                            <div className='divTableCell'>Work Order No.</div>
-                            <div className='divTableCell'>4578</div>
                         </div>
                         <div className='divTableRow'>
                             <div className='divTableCell'>Document ID No.</div>
@@ -638,7 +646,7 @@ class DhrReport extends React.Component {
                 <div className='buttonWrapper clearfix'>
                     <button type='submit' className='myButton red'>QA Reject</button>
                 </div>
-                
+
                 <div className='divTable blueTable completed'>
                     <div className='divTableHeading'>
                         <div className='divTableRow'>

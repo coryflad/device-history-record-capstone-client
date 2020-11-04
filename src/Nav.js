@@ -25,13 +25,13 @@ class navbar extends Component {
                     <nav className="nav">
                         <ul className='link'>
                             <li>
-                                <Link to="/defect-log">Defect Log</Link>
+                                <Link to="/defect-log">Create Defect Log</Link>
                             </li>
                             <li>
-                                <Link to="/dhr-report">DHR Report</Link>
+                                <Link to="/dhr-report">Create DHR Report</Link>
                             </li>
                             <li>
-                                <Link to="/landing">Landing Page</Link>
+                                <Link to="/landing">eDHR Support Central</Link>
                             </li>
                             <li>
                                 <Link to="/" onClick={this.logOutClick}>Log Out</Link>
