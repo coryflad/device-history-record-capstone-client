@@ -124,6 +124,7 @@ input, select {
 
 li {
   list-style-type: none;
+  padding-right: 10px;
   display: inline-block;
 }
 
