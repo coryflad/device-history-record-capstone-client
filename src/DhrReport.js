@@ -389,6 +389,14 @@ class DhrReport extends React.Component {
                     </div>
 
                     <div className='divTableBody'>
+                    <div className='divTableRow'>
+                            <div className='divTableCell'>Applicable DMR</div>
+                            <select name="dmr_no" id="dmr_no">
+                                <option defaultValue="select dmr">select DMR</option>
+                                <option defaultValue="1.5T">1.5T RF Trap</option>
+                                <option defaultValue="3.0T">3.0T RF Trap</option>
+                            </select>
+                        </div>
                         <div className='divTableRow'>
                             <div className='divTableCell'>Assembly Name / No.</div>
                             <select name="device_name" id="device_name">
@@ -412,10 +420,6 @@ class DhrReport extends React.Component {
                                 <option defaultValue="1.5T">1.5T RF Trap</option>
                                 <option defaultValue="3.0T">3.0T RF Trap</option>
                             </select>
-                        </div>
-                        <div className='divTableRow'>
-                            <div className='divTableCell'>Applicable DMR</div>
-                            <div className='divTableCell'>3.0T-124DMR</div>
                         </div>
                         <div className='divTableRow'>
                             <div className='divTableCell'>Document ID No.</div>

@@ -66,6 +66,12 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
 /* font-family: 'Pacifico', cursive;
 font-family: 'Roboto', sans-serif;
 font-family: 'Sriracha', cursive; */
@@ -87,17 +93,25 @@ h1, h2, h3 {
 }
 
 h4 {
-  display: inline-block
+  display: inline-block;
+  padding: 10px 20px;
 }
 
 nav {
   float: right;
+  display: inline-block;
+  padding: 10px 20px;
 }
 
 p {
   text-align: center;
   font-size: 14px;
   margin-top: 4px;
+}
+
+i {
+  display: inline-block;
+  margin-right: 15px;
 }
 
 section {
@@ -363,6 +377,16 @@ div.blueTable {
   margin-right: 60px;
 }
 
+.nav li {
+  padding-right: 10px;
+  padding-left: 10px;
+  border-right: solid 1px grey;
+}
+
+.nav li:last-child{
+  border-right: 0;
+}
+
 
 /* -------------------------------------
 Footer styles (Main Module)
@@ -385,7 +409,9 @@ This is the ideal way to built websites because it is much easier to adapt from 
   body {
       border: 3px solid purple;
   }
-
+  .navlink-text {
+    display: none;
+  }
 }
 
 /*iPhone landscape*/
@@ -406,6 +432,9 @@ This is the ideal way to built websites because it is much easier to adapt from 
 @media only screen and (min-width: 768px) {
   body {
       border: 3px solid red;
+  }
+  .navlink-text {
+    display: block;
   }
 }
 
