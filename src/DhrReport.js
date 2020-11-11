@@ -339,6 +339,168 @@ class DhrReport extends React.Component {
     }
 
 
+
+
+
+
+
+
+
+
+    //enter assembly input from the user
+    handleAssembly = (e) => {
+        e.preventDefault()
+
+        //create an object to store the search filters
+        const data = {}
+
+        //get all the from data from the form component
+        const formData = new FormData(e.target)
+
+        //for each of the keys in form data populate it with form value
+        for (let value of formData) {
+            data[value[0]] = value[1]
+        }
+
+        console.log(data)
+
+        const { date_created, device_name, device_sn, dmr_no, document_id, wo_no } = data
+
+        console.log(date_created, device_name, device_sn, dmr_no, document_id, wo_no)
+
+        if (dmr_no === 'select DMR') {
+            console.log('dmr not selected')
+            this.setState({
+                formValidationError: ' Please select a DMR No. !!'
+            })
+        }
+
+        else if (device_name === 'select device') {
+            console.log('device name not selected')
+            this.setState({
+                formValidationError: ' Please select a device name !!'
+            })
+        }
+
+        else if (wo_no === 'select work order') {
+            console.log('w/o not not selected')
+            this.setState({
+                formValidationError: ' Please select a work order no. !!'
+            })
+        }
+
+        else if (device_sn === 'select serial number') {
+            console.log('serial number not selected')
+            this.setState({
+                formValidationError: ' Please select a serial number !!'
+            })
+        }
+
+        else {
+            //assigning the object from the form data to params in the state
+            this.setState({
+                params: data,
+                formValidationError: ''
+            })
+
+            //check if the state is populated with the search params data
+            console.log(this.state.params)
+
+            // //get the google books api url
+            // const searchURL = 'https://www.googleapis.com/books/v1/volumes'
+
+            // //format the queryString paramters into an object
+            // const queryString = this.formatQueryParams(data)
+
+            // //sent all the params to the final url
+            // const url = searchURL + '?' + queryString
+
+            // console.log(url)
+
+            // //define the API call parameters
+            // const options = {
+            //     method: 'GET',
+            //     header: {
+            //         'Authorization': '',
+            //         'Content-Type': 'application/json'
+            //     }
+            // }
+
+            // //useing the url and paramters above make the api call
+            // fetch(url, options)
+
+            //     // if the api returns data ...
+            //     .then(res => {
+            //         if (!res.ok) {
+            //             throw new Error('Something went wrong, please try again later.')
+            //         }
+
+            //         // ... convert it to json
+            //         return res.json()
+            //     })
+
+            //     // use the json api output
+            //     .then(data => {
+
+            //         //check if there is meaningfull data
+            //         console.log(data);
+
+            //         // check if there are no results
+            //         if (data.totalItems === 0) {
+            //             throw new Error('No books found')
+            //         }
+
+            //         // create and object with each one of the results
+            //         const aBooks = data.items.map(book => {
+
+            //             // get the title, authors, description, imageLinks, previewLink from 'volumeInfo'
+            //             const { title, authors, description, imageLinks, previewLink } = book.volumeInfo
+
+            //             // get the saleability, retailPrice from 'saleInfo'
+            //             const { saleability, retailPrice } = book.saleInfo
+
+
+            //             let validatedOutput = {
+            //                 title: this.checkString(title),
+            //                 author: this.checkString(authors),
+            //                 description: this.checkString(description),
+            //                 previewLink: this.checkURL(previewLink),
+            //                 thumbnail_URL: this.checkEmptyImage(imageLinks.thumbnail),
+            //                 saleability: this.checkInteger(saleability),
+            //                 price: this.checkInteger(retailPrice),
+            //             }
+
+            //             //check if the data validation works
+            //             console.log(validatedOutput);
+
+            //             // fix the inconsitent results and return them
+            //             return validatedOutput;
+            //         })
+
+            //         //check if the validated data is structured in a new array objects
+            //         console.log(aBooks);
+
+            //         //send all the results to the state
+            //         this.setState({
+            //             books: aBooks,
+            //             error: null
+            //         })
+            //     })
+
+            //     //catch connection errors
+            //     .catch(err => {
+            //         this.setState({
+            //             error: err.message
+            //         })
+            // })
+        }
+
+
+
+
+    }
+
+
     render() {
         let showErrorOutput = ''
         if (this.state.formValidationError) {
@@ -379,58 +541,68 @@ class DhrReport extends React.Component {
                 </div> */}
 
                 <h2>DHR Report</h2>
+                <form className='equipment' onSubmit={this.handleAssembly}>
+                    <div className='divTable blueTable media'>
+                        <div className='divTableHeading'>
+                            <div className='divTableRow'>
+                                <div className='divTableHead'>Assembly Details</div>
+                                <div className='divTableHead'>Identifier</div>
+                            </div>
+                        </div>
 
-                <div className='divTable blueTable media'>
-                    <div className='divTableHeading'>
-                        <div className='divTableRow'>
-                            <div className='divTableHead'>Assembly Details</div>
-                            <div className='divTableHead'>Identifier</div>
+                        <div className='divTableBody'>
+                            <div className='divTableRow'>
+                                <div className='divTableCell'>Applicable DMR</div>
+                                <select name="dmr_no" id="dmr_no">
+                                    <option defaultValue="select DMR">select DMR</option>
+                                    <option defaultValue="nc034">NC034DMR</option>
+                                    <option defaultValue="nc023">NC23DMR</option>
+                                </select>
+                            </div>
+                            <div className='divTableRow'>
+                                <div className='divTableCell'>Assembly Name / No.</div>
+                                <select name="device_name" id="device_name">
+                                    <option defaultValue="select device">select device</option>
+                                    <option defaultValue="NC034 1.5T RF Trap">NC034 1.5T RF Trap</option>
+                                    <option defaultValue="NC023 3.0T RF Trap">NC023 3.0T RF Trap</option>
+                                </select>
+                            </div>
+                            <div className='divTableRow'>
+                                <div className='divTableCell'>Work Order No.</div>
+                                <select name="wo_no" id="wo_no">
+                                    <option defaultValue="select w/o no">select work order</option>
+                                    <option defaultValue="3232">3232</option>
+                                    <option defaultValue="4265">4265</option>
+                                </select>
+                            </div>
+                            <div className='divTableRow'>
+                                <div className='divTableCell'>Device S/N</div>
+                                <select name="device_sn" id="device_sn">
+                                    <option defaultValue="select serial number">select S/N</option>
+                                    <option defaultValue="123456">123456</option>
+                                    <option defaultValue="789568">789568</option>
+                                </select>
+                            </div>
+                            <div className='divTableRow'>
+                                <div className='divTableCell'>Document ID No.</div>
+                                <div className='divTableCell'>1
+                                <input type="hidden" defaultValue='1' name='document_id'></input>
+                                </div>
+                            </div>
+                            <div className='divTableRow'>
+                                <div className='divTableCell'>Date Created</div>
+                                <div className='divTableCell'>2020-08-25
+                                <input type="hidden" defaultValue='2020-08-25' name='date_created'></input>
+                                </div>
+                            </div>
                         </div>
                     </div>
-
-                    <div className='divTableBody'>
-                    <div className='divTableRow'>
-                            <div className='divTableCell'>Applicable DMR</div>
-                            <select name="dmr_no" id="dmr_no">
-                                <option defaultValue="select dmr">select DMR</option>
-                                <option defaultValue="1.5T">1.5T RF Trap</option>
-                                <option defaultValue="3.0T">3.0T RF Trap</option>
-                            </select>
-                        </div>
-                        <div className='divTableRow'>
-                            <div className='divTableCell'>Assembly Name / No.</div>
-                            <select name="device_name" id="device_name">
-                                <option defaultValue="select device">select device</option>
-                                <option defaultValue="1.5T">1.5T RF Trap</option>
-                                <option defaultValue="3.0T">3.0T RF Trap</option>
-                            </select>
-                        </div>
-                        <div className='divTableRow'>
-                            <div className='divTableCell'>Work Order No.</div>
-                            <select name="device_name" id="device_name">
-                                <option defaultValue="select device">select work order</option>
-                                <option defaultValue="1.5T">1.5T RF Trap</option>
-                                <option defaultValue="3.0T">3.0T RF Trap</option>
-                            </select>
-                        </div>
-                        <div className='divTableRow'>
-                            <div className='divTableCell'>Device S/N</div>
-                            <select name="device_sn" id="device_sn">
-                                <option defaultValue="select serial number">select S/N</option>
-                                <option defaultValue="1.5T">1.5T RF Trap</option>
-                                <option defaultValue="3.0T">3.0T RF Trap</option>
-                            </select>
-                        </div>
-                        <div className='divTableRow'>
-                            <div className='divTableCell'>Document ID No.</div>
-                            <div className='divTableCell'>1</div>
-                        </div>
-                        <div className='divTableRow'>
-                            <div className='divTableCell'>Date Created</div>
-                            <div className='divTableCell'>2020-08-25</div>
+                    <div className='fullWidth'>
+                        <div className='buttonWrapper clearfix'>
+                            <button type='submit' className='myButton'>Submit Assembly Info</button>
                         </div>
                     </div>
-                </div>
+                </form>
                 {showErrorOutput}
                 <form className='equipment' onSubmit={this.handleEquipment}>
                     <div className='divTable blueTable'>

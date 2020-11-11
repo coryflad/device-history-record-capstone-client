@@ -26,26 +26,26 @@ class navbar extends Component {
                         <ul className='link'>
                             <li>
                                 <Link to="/landing">
-                                    <i class="fas fa-question-circle"></i>
+                                    <i className="fas fa-question-circle"></i>
                                     <span className='navlink-text'>Support Central</span>
                                 </Link>
                             </li>
                             <li>
                                 <Link to="/dhr-report">
-                                    <i class="fas fa-plus-circle"></i>
+                                    <i className="fas fa-plus-circle"></i>
                                     <span className='navlink-text'>Create DHR</span>
                                 </Link>
                             </li>
                             <li>
 
                                 <Link to="/defect-log">
-                                    <i class="fas fa-edit"></i>
+                                    <i className="fas fa-edit"></i>
                                     <span className='navlink-text'>Log Defect</span>
                                 </Link>
                             </li>
                             <li>
                                 <Link to="/" onClick={this.logOutClick}>
-                                    <i class="fas fa-sign-out-alt"></i>
+                                    <i className="fas fa-sign-out-alt"></i>
                                     <span className='navlink-text'>Log Out</span>
                                 </Link>
                             </li>
