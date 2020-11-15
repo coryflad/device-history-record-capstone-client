@@ -1,4 +1,6 @@
 import React from 'react'
+
+import config from './config'
 import TokenService from './services/TokenServices'
 
 
@@ -350,6 +352,7 @@ class DhrReport extends React.Component {
     //enter assembly input from the user
     handleAssembly = (e) => {
         e.preventDefault()
+        let currentUserId = TokenService.getUserId()
 
         //create an object to store the search filters
         const data = {}
@@ -406,93 +409,38 @@ class DhrReport extends React.Component {
             //check if the state is populated with the search params data
             console.log(this.state.params)
 
-            // //get the google books api url
-            // const searchURL = 'https://www.googleapis.com/books/v1/volumes'
+            // create payload and send it across we left of here!!!!
 
-            // //format the queryString paramters into an object
-            // const queryString = this.formatQueryParams(data)
+            const payload = { date_created, device_name, device_sn, dmr_no, document_id, wo_no, currentUserId };
 
-            // //sent all the params to the final url
-            // const url = searchURL + '?' + queryString
+            console.log(payload)
 
-            // console.log(url)
+            const url = `${config.API_ENDPOINT}/create-dhr`;
 
-            // //define the API call parameters
-            // const options = {
-            //     method: 'GET',
-            //     header: {
-            //         'Authorization': '',
-            //         'Content-Type': 'application/json'
-            //     }
-            // }
+            fetch(url, {
+                method: "POST",
+                body: JSON.stringify(payload),
+                headers: {
+                    "content-type": "application/json",
+                },
+            })
+                .then((res) => {
+                    if (!res.ok) {
+                        return res.json().then((error) => {
+                            throw error;
+                        });
+                    }
+                    return res.json();
+                })
+                .then((data) => {
+                    // this.props.updateNote(data);
+                    alert('Post added!');
+                    window.location = '/dhr-report'
+                })
 
-            // //useing the url and paramters above make the api call
-            // fetch(url, options)
-
-            //     // if the api returns data ...
-            //     .then(res => {
-            //         if (!res.ok) {
-            //             throw new Error('Something went wrong, please try again later.')
-            //         }
-
-            //         // ... convert it to json
-            //         return res.json()
-            //     })
-
-            //     // use the json api output
-            //     .then(data => {
-
-            //         //check if there is meaningfull data
-            //         console.log(data);
-
-            //         // check if there are no results
-            //         if (data.totalItems === 0) {
-            //             throw new Error('No books found')
-            //         }
-
-            //         // create and object with each one of the results
-            //         const aBooks = data.items.map(book => {
-
-            //             // get the title, authors, description, imageLinks, previewLink from 'volumeInfo'
-            //             const { title, authors, description, imageLinks, previewLink } = book.volumeInfo
-
-            //             // get the saleability, retailPrice from 'saleInfo'
-            //             const { saleability, retailPrice } = book.saleInfo
-
-
-            //             let validatedOutput = {
-            //                 title: this.checkString(title),
-            //                 author: this.checkString(authors),
-            //                 description: this.checkString(description),
-            //                 previewLink: this.checkURL(previewLink),
-            //                 thumbnail_URL: this.checkEmptyImage(imageLinks.thumbnail),
-            //                 saleability: this.checkInteger(saleability),
-            //                 price: this.checkInteger(retailPrice),
-            //             }
-
-            //             //check if the data validation works
-            //             console.log(validatedOutput);
-
-            //             // fix the inconsitent results and return them
-            //             return validatedOutput;
-            //         })
-
-            //         //check if the validated data is structured in a new array objects
-            //         console.log(aBooks);
-
-            //         //send all the results to the state
-            //         this.setState({
-            //             books: aBooks,
-            //             error: null
-            //         })
-            //     })
-
-            //     //catch connection errors
-            //     .catch(err => {
-            //         this.setState({
-            //             error: err.message
-            //         })
-            // })
+                .catch((error) => {
+                    this.setState({ appError: error });
+                });
         }
 
 

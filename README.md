@@ -103,6 +103,17 @@ The app's functionality includes:
    * id (auto-generated)
    * email (example: jsmith@gmail.com; validation: email validation)
    * password (validation: min 8 chars; one symbol and a capital letter)
+
+* dhr (database table)
+   * id (auto-generated)
+   * user_id (foreign key to user.id) (example: 123456789; validation: integer 255 )
+   * device_name (example: 3.0T RF Trap; validation: varchar 255 characters )
+   * device_sn (example: 20206589; validation: integer 255 )
+   * dmr_no (example: 3.0T-124DMR; validation: varchar 255 characters ) 
+   * document_id (example: 20206589; validation: integer 255 )
+   * wo_no (example: 4578; validation: integer 255 )
+   * date_created (example: 27-04-2020; validation: integer 255 )
+   
 * devices (database table)
    * id (auto-generated)
    * device_id (example: 123456789; validation: integer 255 )
@@ -116,6 +127,7 @@ The app's functionality includes:
    * power_supply (example: 1007; validation: integer 255 )
    * s21_probe (example: 0078; validation: integer 255 )
    * calibration_standard (example: 0003; validation: integer 255 )
+   
 * tests (database table)11
    * id (auto-generated)
    * device_id (example: 123456789; validation: integer 255 )
