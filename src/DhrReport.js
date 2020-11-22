@@ -10,7 +10,8 @@ class DhrReport extends React.Component {
         this.state = {
             params: {},
             dataParams: {},
-            formValidationError: ''
+            formValidationError: '',
+            intialDhrValues: {}
         }
     }
 
@@ -204,6 +205,9 @@ class DhrReport extends React.Component {
 
         console.log(data)
 
+        let currentDhrId = this.state.intialDhrValues.id
+        console.log(currentDhrId)
+
         const { network_analyzer, power_supply, s21_probe, calibration_standard } = data
 
         console.log(network_analyzer, power_supply, s21_probe, calibration_standard)
@@ -246,93 +250,7 @@ class DhrReport extends React.Component {
             //check if the state is populated with the search params data
             console.log(this.state.params)
 
-            // //get the google books api url
-            // const searchURL = 'https://www.googleapis.com/books/v1/volumes'
-
-            // //format the queryString paramters into an object
-            // const queryString = this.formatQueryParams(data)
-
-            // //sent all the params to the final url
-            // const url = searchURL + '?' + queryString
-
-            // console.log(url)
-
-            // //define the API call parameters
-            // const options = {
-            //     method: 'GET',
-            //     header: {
-            //         'Authorization': '',
-            //         'Content-Type': 'application/json'
-            //     }
-            // }
-
-            // //useing the url and paramters above make the api call
-            // fetch(url, options)
-
-            //     // if the api returns data ...
-            //     .then(res => {
-            //         if (!res.ok) {
-            //             throw new Error('Something went wrong, please try again later.')
-            //         }
-
-            //         // ... convert it to json
-            //         return res.json()
-            //     })
-
-            //     // use the json api output
-            //     .then(data => {
-
-            //         //check if there is meaningfull data
-            //         console.log(data);
-
-            //         // check if there are no results
-            //         if (data.totalItems === 0) {
-            //             throw new Error('No books found')
-            //         }
-
-            //         // create and object with each one of the results
-            //         const aBooks = data.items.map(book => {
-
-            //             // get the title, authors, description, imageLinks, previewLink from 'volumeInfo'
-            //             const { title, authors, description, imageLinks, previewLink } = book.volumeInfo
-
-            //             // get the saleability, retailPrice from 'saleInfo'
-            //             const { saleability, retailPrice } = book.saleInfo
-
-
-            //             let validatedOutput = {
-            //                 title: this.checkString(title),
-            //                 author: this.checkString(authors),
-            //                 description: this.checkString(description),
-            //                 previewLink: this.checkURL(previewLink),
-            //                 thumbnail_URL: this.checkEmptyImage(imageLinks.thumbnail),
-            //                 saleability: this.checkInteger(saleability),
-            //                 price: this.checkInteger(retailPrice),
-            //             }
-
-            //             //check if the data validation works
-            //             console.log(validatedOutput);
-
-            //             // fix the inconsitent results and return them
-            //             return validatedOutput;
-            //         })
-
-            //         //check if the validated data is structured in a new array objects
-            //         console.log(aBooks);
-
-            //         //send all the results to the state
-            //         this.setState({
-            //             books: aBooks,
-            //             error: null
-            //         })
-            //     })
-
-            //     //catch connection errors
-            //     .catch(err => {
-            //         this.setState({
-            //             error: err.message
-            //         })
-            // })
+            // add patch for DHR using current dhr ID from above
         }
 
 
@@ -433,9 +351,12 @@ class DhrReport extends React.Component {
                     return res.json();
                 })
                 .then((data) => {
+                    console.log(data)
+                    this.setState({ intialDhrValues: data })
+                    console.log(this.state)
                     // this.props.updateNote(data);
-                    alert('Post added!');
-                    window.location = '/dhr-report'
+                    // alert('Post added!');
+                    // window.location = '/dhr-report'
                 })
 
                 .catch((error) => {
