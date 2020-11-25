@@ -251,21 +251,45 @@ class DhrReport extends React.Component {
             console.log(this.state.params)
 
             // add patch for DHR using current dhr ID from above
+
+            const payload = { network_analyzer, power_supply, s21_probe, calibration_standard };
+
+            console.log(payload)
+
+            // current DHR ID not working
+
+            const url = `${config.API_ENDPOINT}/create-dhr/${currentDhrId}`;
+
+            fetch(url, {
+                method: "PATCH",
+                body: JSON.stringify(payload),
+                headers: {
+                    "content-type": "application/json",
+                },
+            })
+                .then((res) => {
+                    if (!res.ok) {
+                        return res.json().then((error) => {
+                            throw error;
+                        });
+                    }
+                    return res.json();
+                })
+                .then((data) => {
+                    console.log(data)
+                    // this.setState({ intialDhrValues: data })
+                    // console.log(this.state)
+                    // this.props.updateNote(data);
+                    // alert('Post added!');
+                    // window.location = '/dhr-report'
+                })
+
+                .catch((error) => {
+                    this.setState({ appError: error });
+                });
         }
 
-
-
-
     }
-
-
-
-
-
-
-
-
-
 
     //enter assembly input from the user
     handleAssembly = (e) => {
